@@ -116,12 +116,12 @@ author:
   youtube          :
   wikipedia        :
   links:
-  - label: "LinkedIn"
-    icon: "fab fa-fw fa-linkedin"
-    url: "https://linkedin.com/in/zachary-novack/"
-  - label: "Github"
-    icon: "fab fa-fw fa-github"
-    url: "https://github.com/ZacharyNovack"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/zachary-novack/"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ZacharyNovack"
 
 
 
