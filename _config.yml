@@ -8,8 +8,8 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Zachary Novack"
-title_separator          : "-"
-name                     : &name "Your Name"
+title_separator          : "|"
+name                     : &name "Zachary Novack"
 description              : &description "personal description"
 url                      : https://ZacharyNovack.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Zachary Novack"
   avatar           : "profile.jpg"
-  bio              : "Senior in Statistics & Machine Learning,\n Carnegie Mellon University"
+  bio              : "Senior in Statistics & Machine Learning, Carnegie Mellon University"
   location         : 
   employer         :
   pubmed           :
