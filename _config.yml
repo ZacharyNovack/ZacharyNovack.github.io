@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Zachary Novack"
   avatar           : "profile.jpg"
-  bio              : "Senior in Statistics & Machine Learning, Carnegie Mellon University"
+  bio              : "Statistics & Machine Learning, Carnegie Mellon University"
   location         : 
   employer         :
   pubmed           :
@@ -115,6 +115,14 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  links:
+  - label: "LinkedIn"
+    icon: "fab fa-fw fa-linkedin"
+    url: "https://linkedin.com/in/zachary-novack/"
+  - label: "Github"
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/ZacharyNovack"
+
 
 
 # Reading Files
