@@ -22,7 +22,7 @@ In order to model how an individual user responds to trends in their percieved e
 
 
 # Generalization Properties of Stochastic Gradient Descent
-<img src="/sgd.jpeg"
+<img src="/sgd.png"
      alt="sgd resnet"
      style="float: left; margin-right: 10px;"
      height=550px
