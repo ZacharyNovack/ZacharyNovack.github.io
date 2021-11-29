@@ -6,7 +6,7 @@ author_profile: true
 ## Social Media Addiction
 <img src="/sma.jpeg"
      alt="stock sma photo"
-     style="float: left; margin-right: 5px;"
+     style="float: left; margin-right: 10px;"
      height=500px
      width=700px/>
 
@@ -18,9 +18,10 @@ In order to model how an individual user responds to trends in their percieved e
 ## Online Extremism and Hate Speech
 <img src="/xtm.png"
      alt="Ideological Network on The Red Pill subreddit"
-     style="float: left; margin-right: 5px;"
+     style="float: left; margin-right: 10px;"
      height=500px
      width=700px/>
+
 
 There is currently a growing body of research within the applied machine learning community that seeks to quantify and track extremist behavior and hate speech online. I have been particularly interested in thinking about the evolution of **extremist communities and forums** (e.g. The Red Pill on Reddit, /pol/ on 4chan, etc.), as these less mainstream websites are often the progenitors of hateful rhetoric and are trafficked by possible domestic terrorists.
 
