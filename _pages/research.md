@@ -4,7 +4,7 @@ permalink: /research/
 author_profile: true
 ---
 ## Social Media Addiction
-<img src="/xtm.png"
+<img src="/sma.jpeg"
      alt="stock sma photo"
      style="float: left; margin-right: 5px;"
      height=500px
