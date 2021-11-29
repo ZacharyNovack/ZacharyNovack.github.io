@@ -20,6 +20,7 @@ Generally, when everyday people talk about being "addicted to social media", a p
 
 In order to model how an individual user responds to trends in their percieved engagement on Twitter, I have been investigating Bayesian autoregressive modeling (via Stan), where user post frequency is assumed to be drawn from a Negative Binomial distribution. Such modeling assumptions have the benefit over traditional count-data analyses (e.g. Poisson regression) by directly modeling overdispersion in the data, thus account for the often high variability in post frequency that user data exhibits.
 
+<br/><br/>
 
 # Generalization Properties of Stochastic Gradient Descent
 <img src="/sgd.png"
@@ -33,7 +34,7 @@ One of the many open questions with regards to Deep Learning (DL) concerns the f
 
 In this project, I have primarily been looking at what properties of the noise distribution (e.g. coordinate-wise independence, Gaussanity, empirical shape and scale) are necessary for recovering the generalization performance of SGD, across a wide range of modern architectures (e.g. VGG, ResNet, etc.) and benchmarks (e.g. CIFAR-10, MNIST).
 
-
+<br/><br/>
 
 # Online Extremism and Hate Speech
 <img src="/xtm.png"
