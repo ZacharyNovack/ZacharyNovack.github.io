@@ -9,5 +9,5 @@ author_profile: true
 * **[Research](https://zacharynovack.github.io/research/)**
 * **[Music](https://zacharynovack.github.io/music/)**
 * **[Blog Posts](https://zacharynovack.github.io/blog/)**
-* **[CV](https://zacharynovack.github.io/CV_1.pdf)**
+* **[CV](https://zacharynovack.github.io/CV.pdf)**
 * **[Contact](https://zacharynovack.github.io/contact/)**
