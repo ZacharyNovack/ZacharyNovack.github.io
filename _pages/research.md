@@ -43,6 +43,7 @@ In this project, I have primarily been looking at what properties of the noise d
      style="float: left; margin-right: 10px;"
      height=550px
      width=750px/>
+<figcaption align = "center"><b>Figure from <a href="https://arxiv.org/abs/2110.00626" target="_blank">this</a> great paper</b></figcaption>
 
 There is currently a growing body of research within the applied machine learning community that seeks to quantify and track extremist behavior and hate speech online. I have been particularly interested in thinking about the evolution of **extremist communities and forums** (e.g. The Red Pill on Reddit, /pol/ on 4chan, etc.), as these less mainstream websites are often the progenitors of hateful rhetoric and are trafficked by possible domestic terrorists.
 
