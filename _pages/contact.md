@@ -8,6 +8,6 @@ redirect_from:
   - /contact.html
 ---
 
-* Email: novackze [at] gmail.com
+* Email: [novackze [at] gmail.com](mailto:novackze@gmail.com)
 * Linkedin: [Zachary Novack](https://www.linkedin.com/in/zachary-novack/)
 * Github: [ZacharyNovack](https://github.com/ZacharyNovack)
