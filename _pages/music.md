@@ -4,7 +4,7 @@ permalink: /music/
 author_profile: true
 ---
 
-In *somewhat* reverse chronological order:
+*In reverse chronological order:*
 
 
 **PartiChaos: Audio-Reactive Chaos Equation Particle Simulator**
