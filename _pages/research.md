@@ -22,7 +22,7 @@ author_profile: true
      width=750px/>
 <figcaption align = "center"><b>Figure from <a href="https://www.researchgate.net/publication/260426079_An_experimental_validation_of_Temporal_Semiotic_Units_and_Parameterized_Time_Motifs" target="_blank">this</a> paper</b></figcaption>
 
-Recent developments within the Music Information Retrieval (MIR) space have seen large advances in the ability to generate and analyze music. While much of the focus within MIR has been on music generation and analysis tools that inform industry use cases (e.g. music recommendation, genre classification), comparably little attention has been given to more pedagogical use cases, especially with regards to **assessing music difficulty at a fine-grained level (e.g. bar-by-bar) level**.
+Recent developments within the Music Information Retrieval (MIR) space have seen large advances in the ability to generate and analyze music. While much of the focus within MIR has been on music generation and analysis tools that inform industry use cases (e.g. music recommendation, genre classification), comparably little attention has been given to more pedagogical use cases, especially with regards to **assessing music difficulty at a fine-grained (e.g. bar-by-bar) level**.
 
 Here, we have been investigating how we can leverage user performance data to model musical difficulty and forecast incorrect passages within performance without ever seeing the ground truth musical representation.
 
