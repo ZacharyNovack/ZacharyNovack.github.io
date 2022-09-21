@@ -37,7 +37,7 @@ Open vocabulary models, especially CLIP, have seen large successes in Zero-shot 
 
 
 # Implicit and Explicit Regularization in SGD for Deep Networks
-<img src="/reg.pdf"
+<img src="/reg.png"
      alt="sgd resnet"
      style="float: left; margin-right: 10px;"
      height=550px
