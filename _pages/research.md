@@ -26,6 +26,8 @@ Recent developments within the Music Information Retrieval (MIR) space have seen
 
 Here, we have been investigating how we can leverage user performance data to model musical difficulty and forecast incorrect passages within performance without ever seeing the ground truth musical representation.
 
+<br/>
+
 # Hierarchical Set-Based Prediction for Open Vocabulary Models
 <img src="/dogs.webp"
      alt="dog breeds"
@@ -35,14 +37,16 @@ Here, we have been investigating how we can leverage user performance data to mo
 
 Open vocabulary models, especially CLIP, have seen large successes in Zero-shot image classification by embedding the downstream set of classes into textual "prompts" and generating a set of similarity scores between any image and the given class prompts. While existing work on improving CLIP has focused on finetuning CLIP on downstream tasks or improving the quality of the given prompts, we instead have investigated a parallel line of work by framing the class prediction task as a classification problem over **subclasses** of each original superclass. Here, we can leverage CLIP's ability to distinguish between fine-grained concepts (e.g. huskies v.s. corgis) and then use the class-to-subclass mapping to return our predictions into the original superclass space. 
 
+<br/>
 
 # Implicit and Explicit Regularization in SGD for Deep Networks
-<img src="/reg.png"
-     alt="sgd resnet"
-     style="float: center;"
-     height=350px
-     width=550px/>
-
+<p align="center">
+     <img src="/reg.png"
+          alt="sgd resnet"
+          style="float: center;"
+          height=350px
+          width=550px/>
+</p>
 
 One of the many open questions with regards to Deep Learning (DL) concerns the fact that in large, overparametrized networks, models trained with mini-batch Stochastic Gradient Descent (SGD) display improved generalization performance over full-batch methods. While much research has focused on analyzing SGD through the lens of additive or multiplicative noise, we instead have focused on the theories hat attribute SGD's generalization performance to the implicit regularization of certain quantities.
 
