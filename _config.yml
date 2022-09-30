@@ -96,32 +96,32 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/ZacharyNovack"
+  github           : "hZacharyNovack"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "linkedin.com/in/zachary-novack/"
+  linkedin         : "zachary-novack"
   orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : twitter.com/zacknovack
+  twitter          : zacknovack
   vine             :
   weibo            :
   xing             :
   youtube          :
   wikipedia        :
-  # links:
-  #   - label: "LinkedIn"
-  #     icon: "fab fa-fw fa-linkedin"
-  #     url: "https://linkedin.com/in/zachary-novack/"
-  #   - label: "Github"
-  #     icon: "fab fa-fw fa-github"
-  #     url: "https://github.com/ZacharyNovack"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/zachary-novack/"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ZacharyNovack"
 
 
 
