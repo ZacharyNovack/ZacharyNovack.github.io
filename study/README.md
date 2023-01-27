@@ -13,7 +13,7 @@ Each page of the google form corresponds to a given piece, and looks like the fo
 
 <img src="/form.png"
      alt="form"
-     style="float: center; margin-right: 10px;"
+     style="float: center;"
      height=850px
      width=650px/>
 
@@ -25,8 +25,8 @@ Without any score loaded, the score follower software will look like the followi
 
 <img src="/UI.png"
      alt="ui"
-     style="float: left; margin-right: 10px;"
-     height=600px
+     style="float: center;"
+     height=700px
      width=800px/>
 
 For a given piece, the score is auto-formatted to fit the entire piece into one page, but you may need to scroll down in order to initially get the entire score into view.Note that clicking **anywhere** in the piece will advance the cursor to that position, so make sure that before recording, the cursor is at the start of the piece!
