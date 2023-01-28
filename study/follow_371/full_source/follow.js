@@ -1349,6 +1349,9 @@ function toggleStart (stoppos, withCountIn = true) {
             if (MidiOutput[i].includes("Tempo")) {
                 nonChanges = nonChanges - 1;
             }
+            if (MidiOutput[i].includes("Count")) {
+                nonChanges = nonChanges - 1;
+            }
         }
         if (nonChanges > 1){
             download(MidiOutput, inFileName + "_output.txt", 'txt');
@@ -1749,6 +1752,8 @@ function toggleMetro (withCountIn) {
     gCountIn = withCountIn && !opt.nocnt ? cntTab [k] + 1 : 1;
     gCountInPb = opt.volgmod == 6;
     $('#countin').html ('<b>' + gCountIn + '</b>').toggle (true);
+    var outlist = [nu() - startTime, 'CountInStart']
+    MidiOutput.push(outlist.toString() + "\n")
     metroHigh ();
 }
 
