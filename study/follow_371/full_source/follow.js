@@ -1401,7 +1401,7 @@ function keyDown (e) {
     case 'ArrowLeft': case 'Left': markeer (-1); break;
     case 'ArrowUp': case 'Up': changeStaff (-1); break;
     case 'ArrowRight': case 'Right': simPlay (); break;
-    case ' ': e.preventDefault (); simPlay (); break;
+    //case ' ': e.preventDefault (); simPlay (); break;
     case 'ArrowDown': case 'Down': changeStaff (1); break;
     case 'c': toggleStart (-1); break;
     case 'm': $('#mbar').click (); break;
