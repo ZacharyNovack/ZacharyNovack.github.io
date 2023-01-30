@@ -42,7 +42,7 @@ var stfHgt = [];
 var allNotes = [];
 var MidiOutput = [];
 MidiOutput.push(["Start!",0].toString() + "\n");
-var inFileName = document.url.split("/")[4].split(".")[0];
+var inFileName = '';
 var errorCount, adaptiveMode = 0, goodNotes, lateNotes, errorMarks = {};
 var elmSgd, elmSe1, elmSe2, elmSe3, elmPct, elmStot, perfElm;
 var $error, $tempo, $mtrpad, kwartTempo, curNote, nuKwartTempo, nuTfac, korteNoten;
@@ -2762,6 +2762,7 @@ function addTips () {
 }
 
 $(document).ready (function () {
+    inFileName = document.url.split("/")[4].split(".")[0];
     audElm = document.getElementById ('aud');
     volElm = document.getElementById ('vol') || { addEventListener: () => {} }; // dummy object als schuifregelaar niet bestaat
     perfElm = document.getElementById ('perf');
