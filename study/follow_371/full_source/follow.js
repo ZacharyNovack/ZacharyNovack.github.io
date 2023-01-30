@@ -42,7 +42,7 @@ var stfHgt = [];
 var allNotes = [];
 var MidiOutput = [];
 MidiOutput.push(["Start!",0].toString() + "\n");
-var inFileName = '';
+var inFileName = document.url.split("/")[4].split(".")[0];
 var errorCount, adaptiveMode = 0, goodNotes, lateNotes, errorMarks = {};
 var elmSgd, elmSe1, elmSe2, elmSe3, elmPct, elmStot, perfElm;
 var $error, $tempo, $mtrpad, kwartTempo, curNote, nuKwartTempo, nuTfac, korteNoten;
@@ -158,10 +158,8 @@ function laadNootHulp (midiUsed) {
 }
 
 function readDbxFile (files) {
-    var url = files[0].link;
     console.log(url)
     url = url.replace ('www.dropbox', 'dl.dropboxusercontent').split ('?')[0];  // make direct link
-    console.log(url)
     //~ scoreFnm = files[0].name.split ('.')[0];
     pre_opt = {};   // clear old preload settings
     initOptions ();
@@ -204,7 +202,7 @@ function readLocalFile () {
         waitDlg ('#wait', 0);
     }
     var f = $('#fknp').prop ('files')[0];
-    inFileName = f.name.split ('.')[0];
+    //inFileName = f.name.split ('.')[0];
     if (!f) return;
         //~ scoreFnm = f.name.split ('.')[0];
     var nm = f.name.toLowerCase ();
