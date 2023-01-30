@@ -158,7 +158,6 @@ function laadNootHulp (midiUsed) {
 }
 
 function readDbxFile (files) {
-    console.log(url)
     url = url.replace ('www.dropbox', 'dl.dropboxusercontent').split ('?')[0];  // make direct link
     //~ scoreFnm = files[0].name.split ('.')[0];
     pre_opt = {};   // clear old preload settings
@@ -2762,7 +2761,7 @@ function addTips () {
 }
 
 $(document).ready (function () {
-    inFileName = document.url.split("/")[4].split(".")[0];
+    //inFileName = document.url.split("/")[4].split(".")[0];
     audElm = document.getElementById ('aud');
     volElm = document.getElementById ('vol') || { addEventListener: () => {} }; // dummy object als schuifregelaar niet bestaat
     perfElm = document.getElementById ('perf');
