@@ -159,7 +159,9 @@ function laadNootHulp (midiUsed) {
 
 function readDbxFile (files) {
     var url = files[0].link;
+    console.log(url)
     url = url.replace ('www.dropbox', 'dl.dropboxusercontent').split ('?')[0];  // make direct link
+    console.log(url)
     //~ scoreFnm = files[0].name.split ('.')[0];
     pre_opt = {};   // clear old preload settings
     initOptions ();
