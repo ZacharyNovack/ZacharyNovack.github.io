@@ -46,4 +46,6 @@ Given the above guide on how the study works, for each piece you will be tasked 
 - Upload each output file into the corresponding box on the google form
 - Answer the questions on the google form regarding the given piece
 
+Feel free to practice the part in between takes, but we ask you to **not** practice before the first sightreading attempt.
+
 Happy Sightreading!
