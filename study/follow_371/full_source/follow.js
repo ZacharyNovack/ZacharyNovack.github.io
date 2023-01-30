@@ -2761,6 +2761,7 @@ function addTips () {
 }
 
 $(document).ready (function () {
+    console.log(document.URL)
     inFileName = document.URL.split("/")[6].split(".")[0];
     audElm = document.getElementById ('aud');
     volElm = document.getElementById ('vol') || { addEventListener: () => {} }; // dummy object als schuifregelaar niet bestaat
