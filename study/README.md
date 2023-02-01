@@ -3,7 +3,7 @@ permalink: /music-study-guide/
 title: "Fine-Grained Music Difficulty Study Guide"
 author_profile: true
 ---
-Welcome to the Fine-Grained Musical Difficulty User Study! The goal of this study is to collect data on the fine-grained difficulty of musical pieces, in hopes of developing a novel understanding of what makes music difficult, and whether we can automatically change the difficulty of existing musical pieces.
+Welcome to the Fine-Grained Musical Difficulty User Study! The goal of this study is to collect data on the fine-grained difficulty of musical pieces, in hopes of developing a novel understanding of what makes music difficult, and whether we can automatically change the difficulty of existing musical pieces. Please note, that due to the framework of the study, we ask that you block out at least 30 minutes of time and complete the study **in a single sitting**.
 
 First we, will describe how every part of the study works:
 
@@ -46,6 +46,6 @@ Given the above guide on how the study works, for each piece you will be tasked 
 - Upload each output file into the corresponding box on the google form
 - Answer the questions on the google form regarding the given piece
 
-Feel free to practice the part in between takes, but we ask you to **not** practice before the first sightreading attempt.
+We ask that you do not take too much time between takes to practice (on average, you should take about a minute at most if completing the study in one sitting), and that you do **not** practice the piece at all before the first sightreading attempt.
 
 Happy Sightreading!
