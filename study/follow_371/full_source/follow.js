@@ -1740,7 +1740,7 @@ function stopMetro () {
 }
 
 function toggleMetro (withCountIn) {
-    var cntTab = {'2/2':2, '3/2':3, '4/2':4, '2/4':4, '3/4':3, '4/4':4, '5/4':5, '6/8':6, '7/8':3, '9/8':9, '11/8':4, '12/8':4, '3/8': 4, '4/8': 8}
+    var cntTab = {'2/2':2, '3/2':3, '4/2':4, '2/4':4, '3/4':3, '4/4':4, '5/4':5, '6/8':6, '7/8':3, '9/8':9, '11/8':4, '12/8':4, '3/8': 4, '4/8': 8, '8/8': 8}
     $('#start').blur ();        // want anders start spatietoets opnieuw
     if (metroOn || gCountIn) {  // stop metronoom
         stopMetro ();
