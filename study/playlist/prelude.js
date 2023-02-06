@@ -1,6 +1,6 @@
 media_file = "";
 pre_opt = {"delay":1,"eenvoor":0,"metro":1,"keys":0,"mark":0,"mute":1,"volgmod":"6",
-"chkmod":"4","extract":1,"portsel":"synth","tempo":70,"kbopa":0,"scl":1,"gain":5,
+"chkmod":"4","extract":1,"portsel":"nosound","tempo":70,"kbopa":0,"scl":1,"gain":5,
 "drempel":1,"minlev":-18,"bass":0,"mtpo":20,"hrz":0,"vol":50,"nocur":0,"rstmute":1,
 "exact":0,"nolyr":0,"lus":0,"lusstop":1,"lncur":1,"tmng":0,"tmng2":0,"metmrk":0,
 "ftyp":0,"nocnt":0,"scal":0,"echo":1,"staff":1,"line":99,"begin":0,"btime":0,"etime":0,
