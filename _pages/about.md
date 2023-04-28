@@ -21,6 +21,8 @@ In my free time, I enjoy making [experimental computer music](https://zacharynov
 <div style="height:250px;overflow:auto;border:0px;border-collapse: collapse;">
 <table border="none" style="border:0px;border-collapse: collapse;" rules="none">
 <colgroup><col span="1" style="width: 12%;"><col span="1" style="width: 88%;"></colgroup><tbody><tr><td>
+<b> April 2023:</b></td><td> Our work on <a href="https://arxiv.org/abs/2302.02551"> augmenting CLIP zero-shot inference with hierarchical label sets</a> was accepted to ICML 2023 in Honolulu, Hawaii!</td></tr><tr><td> 
+<b> March 2023:</b></td><td> Our work on <a href="https://arxiv.org/abs/2302.02551"> augmenting CLIP zero-shot inference with hierarchical label sets</a> was accepted to the ICLR 2023 1st Workshop on Multimodal Representation Learning!</td></tr><tr><td> 
 <b> January 2023:</b></td><td> Our work on <a href="https://arxiv.org/abs/2211.15853"> understanding implicit regularization mechanisms in SGD</a> was accepted to ICLR 2023 in Kigali, Rwanda!</td></tr><tr><td> 
 <b> December 2022:</b></td><td> Our work on <a href="https://arxiv.org/abs/2211.15853"> understanding implicit regularization mechanisms in SGD</a> got accepted to the NeurIPS 2022 Workshop on the Benefits of Higher Order Optimization in Machine Learning (HOO-ML), as a Spotlight and won Best Poster!</td></tr><tr><td>
 <b> September 2022:</b></td><td> Began CS PhD at UCSD!</td></tr><tr><td>
