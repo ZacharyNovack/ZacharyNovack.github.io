@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <!-- begin SEO -->
+        <title>Publications - Saurabh Garg</title>
+        <meta property="og:locale" content="en-US">
+        <meta property="og:site_name" content="Saurabh Garg">
+        <meta property="og:title" content="Publications">
+        <link rel="canonical" href="https://saurabhgarg1996.github.io/publications/">
+        <meta property="og:url" content="https://saurabhgarg1996.github.io/publications/">
+        <script type="application/ld+json">
+             { "@context" : "http://schema.org", "@type" : "Person", "name" : "Saurabh Garg", "url" : "https://saurabhgarg1996.github.io", "sameAs" : null } 
+        </script>
+        <!-- end SEO -->
+        <link href="https://saurabhgarg1996.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Saurabh Garg Feed">
+        <!-- http://t.co/dKP3o1e -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+        </script>
+        <!-- For all browsers -->
+        <link rel="stylesheet" href="https://saurabhgarg1996.github.io/assets/css/main.css">
+        <link rel="stylesheet" href="https://saurabhgarg1996.github.io/assets/css/bibstyle.css">
+        <meta http-equiv="cleartype" content="on">
+        <!-- start custom head snippets -->
+        <link rel="apple-touch-icon" sizes="57x57" href="https://ZacharyNovack.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://ZacharyNovack.github.io/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://ZacharyNovack.github.io/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://ZacharyNovack.github.io/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://ZacharyNovack.github.io/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://ZacharyNovack.github.io/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://ZacharyNovack.github.io/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://ZacharyNovack.github.io/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://ZacharyNovack.github.io/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+        <link rel="icon" type="image/png" href="https://ZacharyNovack.github.io/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://ZacharyNovack.github.io/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+        <link rel="icon" type="image/png" href="https://ZacharyNovack.github.io/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+        <link rel="icon" type="image/png" href="https://ZacharyNovack.github.io/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+        <link rel="manifest" href="https://ZacharyNovack.github.io/images/manifest.json?v=M44lzPylqQ">
+        <link rel="mask-icon" href="https://ZacharyNovack.github.io/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+        <link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="msapplication-TileImage" content="https://ZacharyNovack.github.io/images/mstile-144x144.png?v=M44lzPylqQ">
+        <meta name="msapplication-config" content="https://ZacharyNovack.github.io/images/browserconfig.xml?v=M44lzPylqQ">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="https://ZacharyNovack.github.io/assets/css/academicons.css"/>
+        <script type="text/x-mathjax-config">
+             MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); 
+        </script>
+        <script type="text/x-mathjax-config">
+             MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } }); 
+        </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+        <!-- end custom head snippets -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131793856-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-131793856-1');
+        </script>
+        <!-- Begin Jekyll SEO tag v2.8.0 -->
+        <title>Publications | Saurabh Garg</title>
+        <meta name="generator" content="Jekyll v3.9.3"/>
+        <meta property="og:title" content="Publications"/>
+        <meta name="author" content="Zachary Novack"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta name="description" content="Zachary Novack – PhD student at UCSD"/>
+        <meta property="og:description" content="Zachary Novack – PhD student at UCSD"/>
+        <link rel="canonical" href="https://ZacharyNovack.github.io/publications/"/>
+        <meta property="og:url" content="https://ZacharyNovack.github.io/publications/"/>
+        <meta property="og:site_name" content="Zachary Novack"/>
+        <meta property="og:type" content="website"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta property="twitter:title" content="Publications"/>
+        <meta name="twitter:site" content="@"/>
+        <meta name="twitter:creator" content="@zacknovack"/>
+        <script type="application/ld+json">
+             {"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Zachary Novack"},"description":"Saurabh Garg – PhD student at CMU","headline":"Publications","url":"https://saurabhgarg1996.github.io/publications/"}
+        </script>
+        <!-- End Jekyll SEO tag -->
+    </head>
+    <body>
+        <!--[if lt IE 9]><div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+        <div class="masthead">
+            <div class="masthead__inner-wrap">
+                <div class="masthead__menu">
+                    <nav id="site-nav" class="greedy-nav">
+                        <button>
+                            <div class="navicon"></div>
+                        </button>
+                        <ul class="visible-links">
+                            <li class="masthead__menu-item masthead__menu-item--lg">
+                                <a href="https://ZacharyNovack.github.io/">Saurabh Garg</a>
+                            </li>
+                            <li class="masthead__menu-item">
+                                <a href="https://ZacharyNovack.github.io/publications/">Publications</a>
+                            </li>
+                            <li class="masthead__menu-item">
+                                <a href="https://ZacharyNovack.github.io/files/CV.pdf">CV</a>
+                            </li>
+                            <li class="masthead__menu-item">
+                                <a href="https://ZacharyNovack.github.io/contact/">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="hidden-links hidden"></ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="main" role="main">
+            <div class="sidebar sticky">
+                <div itemscope itemtype="http://schema.org/Person">
+                    <div class="author__avatar">
+                        <img src="https://ZacharyNovack.github.io/images/profile.png" class="author__avatar" alt="Saurabh Garg">
+                    </div>
+                    <div class="author__content">
+                        <h3 class="author__name">Saurabh Garg</h3>
+                        <p class="author__bio">PhD in Machine Learning, Carnegie Mellon University</p>
+                    </div>
+                    <div class="author__urls-wrapper">
+                        <button class="btn btn--inverse">Follow</button>
+                        <ul class="author__urls social-icons">
+                            <li>
+                                <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>
+                                Pittsburgh, PA
+                            </li>
+                            <li>
+                                <a href="https://github.com/ZacharyNovack/">
+                                    <i class="fa fa-fw fa-chain" aria-hidden="true"></i>
+                                    Website
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:novackze@gmail.com">
+                                    <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i>
+                                    Email
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/zacknovack">
+                                    <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i>
+                                    Twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/zachary-novack/">
+                                    <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://scholar.google.com/citations?user=fZKJdb0AAAAJ&hl=en">
+                                    <i class="ai ai-google-scholar-square ai-fw"></i>
+                                    Google Scholar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="archive">
+                <h1 class="page__title">Publications</h1>
+                <p>
+                    You can also find publications on my 
+                    <span style="color:blue">
+                        <a href="https://scholar.google.com/citations?user=fZKJdb0AAAAJ&hl=en&quot;">Google Scholar</a>
+                    </span>
+                    profile.
+                </p>
+                <h2 id="preprints">Preprints</h2>
+                <p>
+                    <strong>Complementary Benefits of Contrastive Learning and Self-Training Under Distribution Shift</strong>
+                    <br/>Saurabh Garg*, Amrith Setlur*, Zachary Lipton, Sivaraman Balakrishnan, Virginia Smith, Aditi Raghunathan
+                </p>
+                <p>
+                    <strong>Online Label Shift: Optimal Dynamic Regret meets Practical Algorithms</strong>
+                    <br/>
+                    Dheeraj Baby*, Saurabh Garg*, Thomson Yen*, Sivaraman Balakrishnan, Zachary Lipton, Yu-Xiang Wang <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2305.19570">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://github.com/acmi-lab/OnlineLabelShift">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('Baby_2023OLS_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('Baby_2023OLS_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="Baby_2023OLS_abs" style="display: none;">The paper presents new algorithms that adapt to shifting label distributions in supervised and unsupervised online learning settings, ensuring optimal dynamic regret without knowing the extent of label distribution drift, and improving accuracy by 1-3% in various scenarios while remaining sample and computationally efficient.</i>
+                </p>
+                <bibtext xml:space="preserve" id="Baby_2023OLS_bib" style="display: none;">
+                    @article{baby2023online, <br/>
+                    title={Online Label Shift: Optimal Dynamic Regret meets Practical Algorithms}, <br/>
+                    author={Baby, Dheeraj and Garg, Saurabh and Yen, Tzu-Ching and Balakrishnan, Sivaraman and Lipton, Zachary Chase and Wang, Yu-Xiang}, <br/>
+                    journal={arXiv preprint arXiv:2305.19570}, <br/>year={2023}} 
+                </bibtext>
+                <p>
+                    <strong>(Almost) Provable Error Bounds Under Distribution Shift via Disagreement Discrepancy</strong>
+                    <br/>
+                    Elan Rosenfeld, Saurabh Garg <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2306.00312">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://github.com/erosenfeld/disagree_discrep">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('Rosenfeld_2023dis_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('Rosenfeld_2023dis_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="Rosenfeld_2023dis_abs" style="display: none;">The paper introduces a new upper bound on the error for deep neural networks under distribution shifts, utilizing unlabeled test data, an intuitive condition, and a novel `disagreement loss', providing reliable and tight error bounds. </i>
+                </p>
+                <bibtext xml:space="preserve" id="Rosenfeld_2023dis_bib" style="display: none;">
+                    @article{rosenfeld2023almost, <br/>
+                    title={(Almost) Provable Error Bounds Under Distribution Shift via Disagreement Discrepancy}, <br/>
+                    author={Rosenfeld, Elan and Garg, Saurabh}, <br/>
+                    year={2023}, <br/>journal={arXiv:2305.19570} 
+                </bibtext>
+                <h2 id="publications">Publications</h2>
+                <p>
+                    <strong>RLSbench: A Large-Scale Empirical Study of Domain Adaptation Under Relaxed Label Shift</strong>
+                    <br/>
+                    Saurabh Garg, Nick Erickson, James Sharpnack, Alex Smola, Siva Balakrishnan, Zachary Lipton <br/>
+                    NeurIPS Workshop on Distribution Shifts (DistShift), 2022 <br/>
+                    International Conference on Machine Learning (ICML), 2023 <br/>
+                    <span style="color:blue">
+                        <a href="https://sites.google.com/view/rlsbench/">Website</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2302.03020">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://github.com/acmi-lab/RLSbench">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://saurabhgarg1996.github.io/files/rlsbench_poster.pdf">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('Garg_2023RLS_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('Garg_2023RLS_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="Garg_2023RLS_abs" style="display: none;">A large scale study of domain adaptation methods under scenarios where both label distribution and conditionals p(x|y) may shift, highlights brittleness of existing methods and simple fixes that improves the performance.</i>
+                </p>
+                <bibtext xml:space="preserve" id="Garg_2023RLS_bib" style="display: none;">
+                    @inproceedings{garg2023RLSBench, <br/>
+                    title={RLSbench: Domain Adaptation Under Relaxed Label Shift}, <br/>
+                    author={Garg, Saurabh and Erickson, Nick and Sharpnack, James and Smola, Alex and Balakrishnan, Sivaraman and Lipton, Zachary}, <br/>
+                    year={2023}, <br/>booktitle={International Conference on Machine Learning (ICML)} } 
+                </bibtext>
+                <p>
+                    <strong>Downstream Datasets Make Surprisingly Good Pretraining Corpora</strong>
+                    <br/>
+                    Kundan Krishna, Saurabh Garg, Jeffrey Bigham, Zachary Lipton <br/>
+                    NeurIPS Workshop on Transfer Learning for NLP, 2022 <br/>
+                    Proceedings of the 61th Annual Meeting of the Association for Computational Linguistics (ACL), 2023 <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2209.14389">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('kundan_2022_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('kundan_2022_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="kundan_2022_abs" style="display: none;">We observe that pretraining only on the downstream dataset can perform comparably or often even better than pretraining on a huge upstream corpora. </i>
+                </p>
+                <bibtext xml:space="preserve" id="kundan_2022_bib" style="display: none;">
+                    @inproceedings{kundan2022selfpretraining, <br/>
+                    title={Downstream Datasets Make Surprisingly Good Pretraining Corpora}, <br/>
+                    author={Krishna, Kundan and Garg, Saurabh and Bigham, Jeffrey and Lipton, Zachary}, <br/>
+                    booktitle={Proceedings of the 61th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, <br/>year={2023} } 
+                </bibtext>
+                <p>
+                    <strong>CHILS: Zero-shot Image Classification with Hierarchical Label Sets</strong>
+                    <br/>
+                    Zachary Novack, Julian McAuley Zachary Lipton, Saurabh Garg<br/>
+                    First Workshop on Multimodal Representation Learning at ICLR, 2023 <br/>
+                    International Conference on Machine Learning (ICML), 2023 <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2302.02551">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://github.com/acmi-lab/CHILS">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('Novack_2023chils_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('Novack_2023chils_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="Novack_2023chils_abs" style="display: none;">This work introduces CHiLS, a strategy for zero-shot classification to improve CLIP-like models that focuses on improving class names and utilizes implicit semantic hierarchies to enhance accuracy without requiring additional training.</i>
+                </p>
+                <bibtext xml:space="preserve" id="Novack_2023chils_bib" style="display: none;">
+                    @inproceedings{novack2023chils, <br/>
+                    title={CHILS: Zero-shot Image Classification with Hierarchical Label Sets}, <br/>
+                    author={Novack, Zachary and McAuley, Julian and Lipton, Zachary C and Garg, Saurabh}, <br/>
+                    year={2023}, <br/>booktitle={International Conference on Machine Learning (ICML)} } 
+                </bibtext>
+                <p>
+                    <strong>Deconstructing Distributions: A Pointwise Framework of Learning</strong>
+                    <br/>
+                    Gal Kaplun*, Nikhil Ghosh*, Saurabh Garg, Boaz Barak, Preetum Nakkiran <br/>
+                    NeurIPS Workshop on Distribution Shifts (DistShift), 2022 <br/>
+                    International Conference on Learning Representations (ICLR), 2023 <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2202.09931">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('kalpun2022_DD_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('kalpun2022_DD_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="kalpun2022_DD_abs" style="display: none;">We propose a new lens for studying the pointwise performance of learning algorithms which reveals new insights into their behavior and goes beyond traditional notions of in-distribution and "out-of-distribution" learning. </i>
+                </p>
+                <bibtext xml:space="preserve" id="kalpun2022_DD_bib" style="display: none;">
+                    @inproceedings{kaplun2022deconstructing, <br/>
+                    title={Deconstructing Distributions: A Pointwise Framework of Learning}, <br/>
+                    author={Kaplun, Gal and Ghosh, Nikhil and Garg, Saurabh and Barak, Boaz and Nakkiran, Preetum}, <br/>
+                    booktitle={International Conference on Learning Representations (ICLR)}, <br/>year={2022} } 
+                </bibtext>
+                <p>
+                    <strong>Disentangling the Mechanisms Behind Implicit Regularization in SGD</strong>
+                    <br/>
+                    Zachary Novack, Simran Kaur, Tanya Marwah, Saurabh Garg, Zachary Lipton <br/>
+                    <span style="color:red">Spotlight</span>
+                    at NeurIPS Workshop on The Benefits of Higher-Order Optimization in Machine Learning, 2022 <br/>
+                    International Conference on Learning Representations (ICLR), 2023 <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2211.15853">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('novack2023_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <bibtext xml:space="preserve" id="novack2023_bib" style="display: none;">
+                    @inproceedings{novack2023disentangling, <br/>
+                    title={Disentangling the Mechanisms Behind Implicit Regularization in SGD}, <br/>
+                    author={Novack, Zachary and Kaur, Simran and Marwah, Tanya and Garg, Saurabh and Lipton, Zachary, <br/>
+                    booktitle={International Conference on Learning Representations (ICLR)}, <br/>year={2023} } 
+                </bibtext>
+                <p>
+                    <strong>Domain Adaptation under Open Set Label Shift</strong>
+                    <br/>
+                    Saurabh Garg, Sivaraman Balakrishnan, Zachary C. Lipton <br/>
+                    ICML Workshop on Spurious Correlations, Invariance, and Stability (SCIS), 2022<br/>
+                    Advances in Neural Information Processing Systems (NeurIPS), 2022 <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2207.13048">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://github.com/acmi-lab/Open-Set-Label-Shift">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://slideslive.com/38986250/domain-adaptation-under-open-set-label-shift?ref=speaker-37449">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2022_OSLS_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2022_OSLS_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="garg2022_OSLS_abs" style="display: none;">We introduce the problem of domain adaptation under Open Set Label Shift (OSLS) where the label distribution can change arbitrarily and a new class may arrive during deployment, but the class-conditional distributions p(x|y) are domain-invariant. </i>
+                </p>
+                <bibtext xml:space="preserve" id="garg2022_OSLS_bib" style="display: none;">
+                    @inproceedings{garg2022OSLS, <br/>
+                    title={Domain Adaptation under Open Set Label Shift}, <br/>
+                    author={Garg, Saurabh and Balakrishnan, Sivaraman and Lipton, Zachary}, <br/>
+                    year={2022}, <br/>booktitle={Advances in Neural Information Processing Systems (NeurIPS)} } 
+                </bibtext>
+                <p>
+                    <strong>Unsupervised Learning under Latent Label Shift</strong>
+                    <br/>
+                    Manley Roberts, Pranav Mani, Saurabh Garg, Zachary C. Lipton <br/>
+                    ICML Workshop on Spurious Correlations, Invariance, and Stability (SCIS), 2022 <br/>
+                    Advances in Neural Information Processing Systems (NeurIPS), 2022 <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2207.13179">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('roberts2022_LLS_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('roberts2022_LLS_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="roberts2022_LLS_abs" style="display: none;">We introduce unsupervised learning under Latent Label Shift (LLS), where we have access to unlabeled data from multiple domains such that the label marginals p_d(y) can shift across domains but the class conditionals p(x|y) do not.</i>
+                </p>
+                <bibtext xml:space="preserve" id="roberts2022_LLS_bib" style="display: none;">
+                    @inproceedings{roberts2022LLS, <br/>
+                    title={Unsupervised Learning under Latent Label Shift}, <br/>
+                    author={Roberts, Manley and Mani, Pranav and Garg, Saurabh and Lipton, Zachary}, <br/>
+                    year={2022}, <br/>booktitle={Advances in Neural Information Processing Systems (NeurIPS)} } 
+                </bibtext>
+                <p>
+                    <strong>Characterizing Datapoints via Second-Split Forgetting</strong>
+                    <br/>
+                    Pratyush Maini, Saurabh Garg, Zachary Lipton, Zico Kolter<br/>
+                    <span style="color:red">Spotlight</span>
+                    at ICML Workshop on Spurious Correlations, Invariance, and Stability (SCIS), 2022<br/>
+                    Advances in Neural Information Processing Systems (NeurIPS), 2022<br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2210.15031">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://github.com/pratyushmaini/ssft">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('maini2022_ssft_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('maini2022_ssft_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="maini2022_ssft_abs" style="display: none;">We analyze the forgetting and learning dynamics of neural networks to characterize different types of hard examples as belonging to mislabeled, rare and complex categories..</i>
+                </p>
+                <bibtext xml:space="preserve" id="maini2022_ssft_bib" style="display: none;">
+                    @inproceedings{maini2022ssft, <br/>
+                    title={Characterizing Datapoints via Second-Split Forgetting}, <br/>
+                    author={Maini, Pratyush and Garg, Saurabh and Kolter, Zico and Lipton, Zachary}, <br/>
+                    year={2022}, <br/>booktitle={Advances in Neural Information Processing Systems (NeurIPS)} } 
+                </bibtext>
+                <p>
+                    <strong>Leveraging Unlabeled Data to Predict Out-of-Distribution Performance</strong>
+                    <br/>
+                    Saurabh Garg, Sivaraman Balakrishnan, Zachary Lipton, Behnam Neyshabur, Hanie Sedghi<br/>
+                    NeurIPS Workshop on Distribution Shift (DistShift), 2021 <br/>
+                    International Conference on Learning Representations (ICLR), 2022 <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2201.04234">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://github.com/saurabhgarg1996/ATC_code">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2022_ATC_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2022_ATC_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="garg2022_ATC_abs" style="display: none;">Given access to labeled source data and unlabeled target data, we investigate methods to predict target domain performance and find a simple method that does surprisingly well.We also explore the theoretical foundations of the problem, proving that identifying the accuracy is just as hard as identifying the optimal predictor. </i>
+                </p>
+                <bibtext xml:space="preserve" id="garg2022_ATC_bib" style="display: none;">
+                    @inproceedings{garg2022ATC, <br/>
+                    title={Leveraging Unlabeled Data to Predict Out-of-Distribution Performance}, <br/>
+                    author={Garg, Saurabh and Balakrishnan, Sivaraman and Lipton, Zachary and Neyshabur, Behnam and Sedghi, Hanie}, <br/>
+                    year={2022}, <br/>booktitle={International Conference on Learning Representations (ICLR)} } 
+                </bibtext>
+                <p>
+                    <strong>Mixture Proportion Estimation and PU Learning: A Modern Approach</strong>
+                    <br/>
+                    Saurabh Garg, Yifan Wu, Alex Smola, Sivaraman Balakrishnan, Zachary Lipton<br/>
+                    <span style="color:red">Spotlight</span>
+                    at Advances in Neural Information Processing Systems (NeurIPS), 2021 <br/>
+                    ICML Workshop on Uncertainty in Deep Learning, 2021 <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2111.00980">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://github.com/acmi-lab/PU_learning">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://slideslive.com/38969149/mixture-proportion-estimation-and-pu-learning-a-modern-approach">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://drive.google.com/file/d/1liowCWEHxMZH2Ag5ozaJfAG58RCwOh86/view?usp=sharing">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2021_PU_learning_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2021_PU_learning_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="garg2021_PU_learning_abs" style="display: none;">Given only Positive (P) and Unlabeled (U) data, containing both P and Negative (N) samples, we propose new approaches to estimate fraction of P in U and learn P vs N classifier. </i>
+                </p>
+                <bibtext xml:space="preserve" id="garg2021_PU_learning_bib" style="display: none;">
+                    @inproceedings{garg2021PUlearning, <br/>
+                    title={Mixture Proportion Estimation and {PU} Learning: A Modern Approach}, <br/>
+                    author={Garg, Saurabh and Wu, Yifan and Smola, Alex and Balakrishnan, Sivaraman and Lipton, Zachary}, <br/>
+                    year={2021}, <br/>booktitle={Advances in Neural Information Processing Systems (NeurIPS)} } 
+                </bibtext>
+                <p>
+                    <strong>RATT: Leveraging Unlabeled Data to Guarantee Generalization</strong>
+                    <br/>
+                    Saurabh Garg, Sivaraman Balakrishnan, Zico Kolter, Zachary Lipton <br/>
+                    <span style="color:red">Long Talk</span>
+                    at International Conference on Machine Learning (ICML), 2021 <br/>
+                    ICLR Workshop on RobustML, 2021 <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2105.00303">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://github.com/acmi-lab/RATT_generalization_bound">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://slideslive.com/38958661/ratt-leveraging-unlabeled-data-to-guarantee-generalization">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://drive.google.com/file/d/1H25csKq622EDMtw2en-aDQxqNcP1Mcdg/view?usp=sharing">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2021_RATT_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2021_RATT_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="garg2021_RATT_abs" style="display: none;">We introduce a method that leverages unlabeled data to produce generalization bound. When a trained model fits clean training data well but randomly labeled training data added in poorly, we show that its generalization to the population is guaranteed.</i>
+                </p>
+                <bibtext xml:space="preserve" id="garg2021_RATT_bib" style="display: none;">
+                    @inproceedings{garg2021RATT, <br/>
+                    title={ {RATT}: Leveraging Unlabeled Data to Guarantee Generalization}, <br/>
+                    author={Garg, Saurabh and Balakrishnan, Sivaraman and Kolter, Zico and Lipton, Zachary}, <br/>
+                    year={2021}, <br/>booktitle={International Conference on Machine Learning (ICML)} } 
+                </bibtext>
+                <p>
+                    <strong>On Proximal Policy Optimization’s Heavy-Tailed Gradients</strong>
+                    <br/>
+                    Saurabh Garg, Joshua Zhanson, Emilio Parisotto, Adarsh Prasad, Zico Kolter, Zachary Lipton, Sivaraman Balakrishnan, Ruslan Salakhutdinov, Pradeep Ravikumar <br/>
+                    Short talk at International Conference on Machine Learning (ICML), 2021 <br/>
+                    ICLR Workshop on Science and Engineering of Deep Learning, 2021 <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2102.10264">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="">Code</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://slideslive.com/38959028/on-proximal-policy-optimizations-heavytailed-gradients?ref=speaker-37449-latest">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://drive.google.com/file/d/1U2GxKvBqEC32vY-DZxnzHT80rj8fePqr/view?usp=sharing">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2021_PPO_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2021_PPO_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="garg2021_PPO_abs" style="display: none;">We empirically characterized PPO’s gradients, demonstrating that they become more heavy-tailed as training proceeds. We examined issues due to heavy-tailed nature of gradients and show that PPO clipping heuristics offset heavy-tailedness in gradients. </i>
+                </p>
+                <bibtext xml:space="preserve" id="garg2021_PPO_bib" style="display: none;">
+                    @inproceedings{garg2021PPO, <br/>
+                    title={ On Proximal Policy Optimization’s Heavy-tailed Gradients}, <br/>
+                    author={Garg, Saurabh and Zhanson, Joshua and Parisotto, Emilio and Prasad, Adarsh and Kolter, J Zico and Balakrishnan, Sivaraman and Lipton, Zachary C and Salakhutdinov, Ruslan and Ravikumar, Pradeep}, <br/>
+                    year={2021}, <br/>booktitle={International Conference on Machine Learning (ICML)} } 
+                </bibtext>
+                <p>
+                    <strong>A Unified View of Label Shift Estimation</strong>
+                    <br/>
+                    Saurabh Garg, Yifan Wu, Sivaraman Balakrishnan, Zachary Lipton<br/>
+                    Advances in Neural Information Processing Systems (NeurIPS), 2020 <br/>
+                    <span style="color:red">Contributed Talk</span>
+                    at ICML Workshop on Uncertainty in Deep Learning, 2020 <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/2003.07554">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://slideslive.com/38930578/a-unified-view-of-label-shift-estimation?ref=speaker-37449-latest">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://drive.google.com/file/d/13hpynIYM69nSRqj-7CHdvEdG7amC9phy/view?usp=sharing">Poster</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2021_labelshift_abs')">Summary</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2021_labelshift_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <p>
+                    <i id="garg2021_labelshift_abs" style="display: none;">We provide a unified framework relating techniques that use off-the-shelf predictors for label shift estimation. We argue that these methods all employ calibration, either explicitly or implicitly, differing only in the choice of calibration method and their optimization objective. </i>
+                </p>
+                <bibtext xml:space="preserve" id="garg2021_labelshift_bib" style="display: none;">
+                    @inproceedings{garg2020labelshift, <br/>
+                    title={ A Unified View of Label Shift Estimation}, <br/>
+                    author={Garg, Saurabh and Wu, Yifan and Balakrishnan, Sivaraman and Lipton, Zachary}, <br/>
+                    year={2020}, <br/>booktitle={Advances in Neural Information Processing Systems (NeurIPS)} } 
+                </bibtext>
+                <p>
+                    <strong>Neural Architecture for Question Answering Using a Knowledge Graph and Web Corpus</strong>
+                    <br/>
+                    Uma Sawant, Saurabh Garg, Soumen Chakrabarti, Ganesh Ramakrishnan<br/>
+                    Information Retrieval Journal, 2019 <br/>
+                    <span style="color:red">Invited Oral</span>
+                    at European Conference on Information Retrieval (ECIR), 2020 <br/>
+                    <span style="color:blue">
+                        <a href="https://arxiv.org/abs/1706.00973">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="https://youtu.be/cVZ3Qj8sJCk?t=24540">Talk</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2019_QA_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <bibtext xml:space="preserve" id="garg2019_QA_bib" style="display: none;">
+                    @article{sawant2019neural, title={Neural architecture for question answering using a knowledge graph and web corpus}, <br/>
+                    author={Sawant, Uma and Garg, Saurabh and Chakrabarti, Soumen and Ramakrishnan, Ganesh}, <br/>
+                    journal={Information Retrieval Journal}, <br/>
+                    volume={22}, <br/>
+                    number={3}, <br/>
+                    pages={324--349}, <br/>
+                    year={2019}, <br/>
+                    publisher={Springer}<br/>} 
+                </bibtext>
+                <p>
+                    <strong>Estimating Uncertainty in MRF-based Image Segmentation: An Exact-MCMC Approach</strong>
+                    <br/>
+                    Suyash Awate, Saurabh Garg, Rohit Jena<br/>
+                    Medical Image Analysis Journal, 2019 <br/>
+                    <span style="color:blue">
+                        <a href="https://doi.org/10.1016/j.media.2019.04.014">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2019_MEDIA_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <bibtext xml:space="preserve" id="garg2019_MEDIA_bib" style="display: none;">
+                    @article{awate2019estimating,<br/>
+                    title={Estimating uncertainty in MRF-based image segmentation: A perfect-MCMC approach},<br/>
+                    author={Awate, Suyash P and Garg, Saurabh and Jena, Rohit},<br/>
+                    journal={Medical image analysis},<br/>
+                    volume={55},<br/>
+                    pages={181--196},<br/>
+                    year={2019},<br/>
+                    publisher={Elsevier}<br/>} 
+                </bibtext>
+                <p>
+                    <strong>Code-Switched Language models using Dual RNNs and Same-Source Pretraining</strong>
+                    <br/>
+                    Saurabh Garg*, Tanmay Parekh*, Preethi Jyothi (*joint first authors)<br/>
+                    <em>Awarded EMNLP Non-Student Travel Grant</em>
+                    <br/>
+                    Proceedings of Empirical Methods in Natural Language Processing (EMNLP), 2018 <br/>
+                    <span style="color:blue">
+                        <a href="http://aclweb.org/anthology/D18-1346">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2018_EMNLP_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <bibtext xml:space="preserve" id="garg2018_EMNLPA_bib" style="display: none;">
+                    @inproceedings{garg2018code,<br/>
+                    title={Code-switched Language Models Using Dual RNNs and Same-Source Pretraining},<br/>
+                    author={Garg, Saurabh and Parekh, Tanmay and Jyothi, Preethi},<br/>
+                    booktitle={Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing},<br/>
+                    pages={3078--3083},<br/>
+                    year={2018}<br/>} 
+                </bibtext>
+                <p>
+                    <strong>Uncertainty Estimation in Segmentation with Perfect MCMC Sampling in Bayesian MRFs</strong>
+                    <br/>
+                    Saurabh Garg, Suyash Awate<br/>
+                    Proceedings of Medical Image Computing &amp;Computer Assisted Intervention (MICCAI), 2019 <br/>
+                    <span style="color:blue">
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-030-00928-1_76">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2018_MICCAI_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <bibtext xml:space="preserve" id="garg2018_MICCAI_bib" style="display: none;">
+                    @inproceedings{garg2018perfect,<br/>
+                    title={Perfect MCMC sampling in Bayesian MRFs for uncertainty estimation in segmentation},<br/>
+                    author={Garg, Saurabh and Awate, Suyash P},<br/>
+                    booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},<br/>
+                    pages={673--681},<br/>
+                    year={2018},<br/>
+                    organization={Springer}<br/>} 
+                </bibtext>
+                <p>
+                    <strong>Dual Language Models for Code Mixed Speech Recognition</strong>
+                    <br/>
+                    Saurabh Garg, Tanmay Parekh, Preethi Jyothi <br/>
+                    <em>Awarded ISCA Student Travel Grant</em>
+                    <br/>
+                    Proceedings of Interspeech 2018 (19th Annual Conference of ISCA) <br/>
+                    <span style="color:blue">
+                        <a href="https://www.semanticscholar.org/paper/Dual-Language-Models-for-Code-Switched-Speech-Garg-Parekh/5c0371c3e34722f0fbdf5669c8e5361fac60bbcd">Paper</a>
+                    </span>
+                    / 
+                    <span style="color:blue">
+                        <a href="javascript:toggleblock('garg2018_Interspeech_bib')">Bibtex</a>
+                    </span>
+                </p>
+                <bibtext xml:space="preserve" id="garg2018_Interspeech_bib" style="display: none;">
+                    @article{garg2017dual,<br/>
+                    title={Dual language models for code switched speech recognition},<br/>
+                    author={Garg, Saurabh and Parekh, Tanmay and Jyothi, Preethi},<br/>
+                    journal={arXiv preprint arXiv:1711.01048},<br/>
+                    year={2017}<br/>} 
+                </bibtext>
+            </div>
+        </div>
+        <div class="page__footer">
+            <footer>
+                <!-- start custom footer snippets -->
+                <a href="/sitemap/">Sitemap</a>
+                <!-- end custom footer snippets -->
+                <div class="page__footer-follow">
+                    <ul class="social-icons">
+                        <li>
+                            <strong>Follow:</strong>
+                        </li>
+                        <li>
+                            <a href="https://saurabhgarg1996.github.io/feed.xml">
+                                <i class="fa fa-fw fa-rss-square" aria-hidden="true"></i>
+                                Feed
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page__footer-copyright">
+                    &copy;2023 Saurabh Garg. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>
+                    &amp;<a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>
+                    , a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>
+                    .
+                </div>
+            </footer>
+        </div>
+        <script src="https://saurabhgarg1996.github.io/assets/js/main.min.js"></script>
+        <script src="https://saurabhgarg1996.github.io/assets/js/hidebib.js"></script>
+        <script>
+            var elements = document.querySelectorAll('p');
+            Array.prototype.forEach.call(elements, function(el, i) {
+                if (el.innerHTML == '[expand]') {
+                    var parentcontent = el.parentNode.innerHTML.replace('<p>[expand]</p>', '<div class="expand" style="display: none; height: 0; overflow: hidden;">').replace('<p>[/expand]</p>', '</div>');
+                    el.parentNode.innerHTML = parentcontent;
+                }
+            });
+            var elements = document.querySelectorAll('div.expand');
+            Array.prototype.forEach.call(elements, function(el, i) {
+                el.previousElementSibling.innerHTML = el.previousElementSibling.innerHTML + '<span>..&nbsp; <a href="#" style="cursor: pointer;" onclick="this.parentNode.parentNode.nextElementSibling.style.display = \'block\'; this.parentNode.parentNode.nextElementSibling.style.height = \'auto\'; this.parentNode.style.display = \'none\';">read&nbsp;more&nbsp;&rarr;</a></span>';
+            });
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131793856-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-131793856-1');
+        </script>
+    </body>
+</html>
