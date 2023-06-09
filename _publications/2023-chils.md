@@ -1,6 +1,7 @@
 ---
 title: "CHiLS: Zero-Shot Image Classification with Hierarchical Label Sets"
 collection: publications
+pubtype: publications
 permalink: /publication/CHiLS
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2023-02-06
