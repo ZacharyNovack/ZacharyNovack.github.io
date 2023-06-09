@@ -27,9 +27,9 @@
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
-      {% if post.collection == 'publications' %}
-        {{ title }}
-      {% elsif post.link %}
+      <!-- {% if post.collection == 'publications' %}
+        {{ title }} -->
+      {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
@@ -55,24 +55,23 @@
       {% endif %}
       
       <!-- citation and icon code -->
+      </strong>title</strong>
       <p>
       {% if post.citation %}
         {{ post.citation }}
       {% endif %}
       <br>
       {% if post.link %}
-      <span style="color:blue"><a href="{{ post.link }}">Link</a></span>
-      " / "
+      <span style="color:blue"><a href="{{ post.link }}">Link / </a></span>
       {% endif %}
       {% if post.paperurl %}
-      <span style="color:blue"><a href="{{ post.paperurl }}">Paper</a></span>
-      " / "
+      <span style="color:blue"><a href="{{ post.paperurl }}">Paper / </a></span>
       {% endif %}
       {% if post.code %}
-      <span style="color:blue"><a href="{{ post.code }}">Code</a></span>
+      <span style="color:blue"><a href="{{ post.code }}">Code / </a></span>
       {% endif %}
       {% if post.github %}
-      <span style="color:blue"><a href="{{ post.github }}">Github</a></span>
+      <span style="color:blue"><a href="{{ post.github }}">Github / </a></span>
       {% endif %}
       </p>
     {% elsif post.collection == 'posts' and post.date %}
