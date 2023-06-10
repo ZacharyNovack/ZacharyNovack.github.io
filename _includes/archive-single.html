@@ -63,23 +63,15 @@
       {% endif %} -->
       <br>
       <span style="color:black">{{ post.authors }}</span>
-      <br>
       {% for vn in post.venue %}
-        <span style="color:black">{{ vn }}</span>
         <br>
+        <span style="color:black">{{ vn }}</span>
       {% endfor %}
-      <br>
-      {% if post.link %}
-      <span style="color:blue"><a href="{{ post.link }}">Link</a></span>  / 
-      {% endif %}
       {% if post.paperurl %}
       <span style="color:blue"><a href="{{ post.paperurl }}">Paper</a></span>  / 
       {% endif %}
       {% if post.code %}
       <span style="color:blue"><a href="{{ post.code }}">Code</a></span>  / 
-      {% endif %}
-      {% if post.github %}
-      <span style="color:blue"><a href="{{ post.github }}">Github</a></span>  / 
       {% endif %}
       </p>
     {% elsif post.collection == 'posts' and post.date %}
