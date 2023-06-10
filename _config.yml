@@ -190,6 +190,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  unrefs:
+    output: true
+    permalink: /publications/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
