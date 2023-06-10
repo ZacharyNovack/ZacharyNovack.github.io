@@ -18,6 +18,3 @@ You can also find my articles on <u><a href="https://scholar.google.com/citation
 {% endfor %}
 
 <sup>*</sup> Equal authorship
-
-
-<script src="https://ZacharyNovack.github.io/assets/js/hidebib.js"></script>
