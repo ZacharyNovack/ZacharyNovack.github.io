@@ -87,7 +87,7 @@
       <span style="color:blue"><a href="{{ post.code }}">Code</a></span>  / 
       {% endif %}
       {% if post.excerpt %}
-      <span style="color:blue"><a href="javascript:toggleblock(post.abs_title)">Summary</a></span>  / 
+      <span style="color:blue"><a href="javascript:toggleblock({{ post.abs_title }})">Summary</a></span>  / 
       {% endif %}
       </p>
     {% elsif post.collection == 'posts' and post.date %}
