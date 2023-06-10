@@ -10,10 +10,10 @@ date: 2023-02-06
 venue: ['International Conference on Machine Learning (ICML), 2023', '1st Workshop on Multimodal Representation Learning, ICLR, 2023']
 paperurl: 'https://arxiv.org/abs/2302.02551'
 code: 'https://github.com/acmi-lab/CHILS'
-citation: '@inproceedings{novack2023chils,
-    title={CHiLS: Zero-Shot Image Classification with Hierarchical Label Sets},
-    author={Novack, Zachary and McAuley, Julian and Lipton, Zachary and Garg, Saurabh},
-    year={2023},
+citation: '@inproceedings{novack2023chils,<br />
+    title={CHiLS: Zero-Shot Image Classification with Hierarchical Label Sets},<br />
+    author={Novack, Zachary and McAuley, Julian and Lipton, Zachary and Garg, Saurabh},<br />
+    year={2023},<br />
     booktitle={International Conference on Machine Learning (ICML)}, 
 }'
 ---
