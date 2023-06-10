@@ -14,10 +14,14 @@
 
 {% if post.excerpt %}
   {% assign abs_title = post.abs_title + | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
 {% endif %}
 
 {% if post.citation %}
   {% assign bib_title = post.bib_title + | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
 {% endif %}
 
 
@@ -97,7 +101,7 @@
     {% if post.excerpt}
       <p><i id="{{ post.abs_title }}" style="display: block;">post.excerpt</i></p>
     {% endif %}
-    
+
     {% if post.citation}
       <bibtext xml:space="preserve" id="{{ post.bib_title }}" style="display: none;">post.citation</bibtext>
     {% endif %}
