@@ -91,9 +91,9 @@
       <p class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
     {% endif %}
 
-    {% if post.excerpt}
+    <!-- {% if post.excerpt}
       <p><i id="{{ post.abs_title }}" style="display: none;">post.excerpt</i></p>
-    {% endif %}
+    {% endif %} -->
 
     <!-- {% if post.excerpt and post.collection == 'research' and site.read_more != 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description">
