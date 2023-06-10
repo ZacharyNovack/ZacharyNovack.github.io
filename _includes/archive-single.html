@@ -65,8 +65,9 @@
       <span style="color:black">{{ post.authors }}</span>
       {% for vn in post.venue %}
         <br>
-        <span style="color:black">{{ vn }}</span>
+        <span style="color:black;font-style:italic">{{ vn }}</span>
       {% endfor %}
+      <br>
       {% if post.paperurl %}
       <span style="color:blue"><a href="{{ post.paperurl }}">Paper</a></span>  / 
       {% endif %}
