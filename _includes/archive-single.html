@@ -12,6 +12,15 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% if post.excerpt %}
+  {% assign abs_title = post.abs_title + | markdownify | remove: "<p>" | remove: "</p>" %}
+{% endif %}
+
+{% if post.citation %}
+  {% assign bib_title = post.bib_title + | markdownify | remove: "<p>" | remove: "</p>" %}
+{% endif %}
+
+
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -74,12 +83,25 @@
       {% if post.code %}
       <span style="color:blue"><a href="{{ post.code }}">Code</a></span>  / 
       {% endif %}
+      {% if post.excerpt %}
+      <span style="color:blue"><a href="javascript:toggleblock(post.abs_title)">Summary</a></span>  / 
+      {% endif %}
+      {% if post.citation %}
+      <span style="color:blue"><a href="javascript:toggleblock(post.bib_title)">Bibtex</a></span>  / 
+      {% endif %}
       </p>
     {% elsif post.collection == 'posts' and post.date %}
       <p class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
     {% endif %}
+
+    {% if post.excerpt}
+      <p><i id="{{ post.abs_title }}" style="display: block;">post.excerpt</i></p>
+    {% endif %}
+    {% if post.citation}
+      <bibtext xml:space="preserve" id="{{ post.bib_title }}" style="display: none;">post.citation</bibtext>
+    {% endif %}
     
-    {% if post.excerpt and post.collection == 'research' and site.read_more != 'enabled' %}
+    <!-- {% if post.excerpt and post.collection == 'research' and site.read_more != 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description">
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">
         <div class="container">
@@ -99,7 +121,7 @@
           </strong>
         </p>
       </p>
-    {% endif %}
+    {% endif %} -->
     
   </article>
 </div>
