@@ -12,7 +12,7 @@
   {% assign title = post.title %}
 {% endif %}
 
-{% if post.excerpt %}
+<!-- {% if post.excerpt %}
   {% assign abs_title = post.abs_title + | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
   {% assign title = post.title %}
@@ -22,8 +22,7 @@
   {% assign bib_title = post.bib_title + | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
   {% assign title = post.title %}
-{% endif %}
-
+{% endif %} -->
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -106,7 +105,7 @@
       <bibtext xml:space="preserve" id="{{ post.bib_title }}" style="display: none;">post.citation</bibtext>
     {% endif %}
     
-    <!-- {% if post.excerpt and post.collection == 'research' and site.read_more != 'enabled' %}
+    {% if post.excerpt and post.collection == 'research' and site.read_more != 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description">
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">
         <div class="container">
@@ -126,7 +125,7 @@
           </strong>
         </p>
       </p>
-    {% endif %} -->
+    {% endif %}
     
   </article>
 </div>
