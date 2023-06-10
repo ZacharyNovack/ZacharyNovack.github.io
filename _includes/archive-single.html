@@ -48,12 +48,12 @@
       {% endif %}
     </h2> -->
     
-    {% if post.read_time %}
+    <!-- {% if post.read_time %}
     {% elsif post.read_time and post.collection == 'posts' %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
+    {% endif %} -->
 
-    {% if post.collection == 'teaching' %}
+    <!-- {% if post.collection == 'teaching' %}
       <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.collection == 'publications' %}
       {% if post.abstract %}
@@ -65,7 +65,7 @@
         </blockquote>
         </details>
       {% endif %}
-      
+       -->
       <!-- citation and icon code -->
       
       <p>
@@ -93,9 +93,9 @@
       <span style="color:blue"><a href="javascript:toggleblock(post.bib_title)">Bibtex</a></span>  / 
       {% endif %} -->
       </p>
-    {% elsif post.collection == 'posts' and post.date %}
+    <!-- {% elsif post.collection == 'posts' and post.date %}
       <p class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-    {% endif %}
+    {% endif %} -->
 
     <!-- {% if post.excerpt}
       <p><i id="{{ post.abs_title }}" style="display: block;">post.excerpt</i></p>
