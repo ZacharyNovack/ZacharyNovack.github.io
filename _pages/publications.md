@@ -11,7 +11,7 @@ author_profile: true
 
 {% include base_path %}
 
-You can also find my articles on my <u><a href="https://scholar.google.com/citations?user=fZKJdb0AAAAJ&hl=en&authuser=2">Google Scholar</a> profile.</u>
+You can also find my articles on my <a href="https://scholar.google.com/citations?user=fZKJdb0AAAAJ&hl=en&authuser=2">Google Scholar</a> profile.
 
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
