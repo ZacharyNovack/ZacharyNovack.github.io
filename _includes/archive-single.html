@@ -102,7 +102,7 @@ function toggleblock(blockId)
       <span style="color:blue"><a href="javascript:void(0);" onclick="toggleblock('{{ post.abs_title }}');">Summary</a></span>  / 
       {% endif %}
       {% if post.citation %}
-      <span style="color:blue"><a href="javascript:void(0);" onclick="toggleblock('{{ post.bib_title }}');">BibTex</a></span>  / 
+      <span style="color:blue"><a href="javascript:void(0);" onclick="toggleblock('{{ post.bib_title }}');">BibTex</a></span>
       {% endif %}
       </p>
     {% elsif post.collection == 'posts' and post.date %}
