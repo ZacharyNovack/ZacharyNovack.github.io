@@ -23,7 +23,7 @@ You can also find my articles on my <a href="https://scholar.google.com/citation
 
 **Conference Publications**
 {% for post in site.publications reversed %}
-  {% if post.pub_status == 'workshop' %}
+  {% if post.pub_status == 'conference' %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
