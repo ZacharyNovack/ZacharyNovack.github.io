@@ -6,6 +6,7 @@ permalink: /publication/CHiLS
 excerpt: 'This work introduces CHiLS, a strategy for zero-shot classification to improve CLIP-like models that focuses on improving class names and utilizes implicit semantic hierarchies to enhance accuracy without requiring additional training.'
 abs_title: chils_2023_abs
 bib_title: chils_2023_bib
+pub_status: 'conference'
 date: 2023-02-06
 venue: ['International Conference on Machine Learning (ICML), 2023', '1st Workshop on Multimodal Representation Learning, ICLR, 2023']
 paperurl: 'https://arxiv.org/abs/2302.02551'

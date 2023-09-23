@@ -13,15 +13,31 @@ author_profile: true
 
 You can also find my articles on my <a href="https://scholar.google.com/citations?user=fZKJdb0AAAAJ&hl=en&authuser=2">Google Scholar</a> profile.
 
-
-<!-- **Conference Publications**
+**Preprints**
 {% for post in site.publications reversed %}
+  {% if post.pub_status == 'preprint' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+
+**Conference Publications**
+{% for post in site.publications reversed %}
+  {% if post.pub_status == 'workshop' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+**Non Refereed Publications**
+{% for post in site.publications reversed %}
+  {% if post.pub_status == 'nonrefereed' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<!-- **Unreferred Papers**
+{% for post in site.unrefs reversed %}
   {% include archive-single.html %}
 {% endfor %} -->
 
-**Unreferred Papers**
-{% for post in site.unrefs reversed %}
-  {% include archive-single.html %}
-{% endfor %}
-
-<!-- <sup>*</sup> Equal authorship -->
+<sup>*</sup> Equal authorship

@@ -10,6 +10,7 @@ paperurl: 'https://arxiv.org/abs/2211.15853'
 code: 'https://github.com/acmi-lab/imp-regularizers'
 abs_title: disen_2023_abs
 bib_title: disen_2023_bib
+pub_status: 'conference'
 citation: '@inproceedings{novack2023disentangling,<br />
 title={Disentangling the Mechanisms Behind Implicit Regularization in SGD},<br />
 author={Novack, Zachary and Kaur, Simran and Marwah, Tanya and Garg, Saurabh and Lipton, Zachary},<br />
