@@ -20,7 +20,6 @@ You can also find my articles on my <a href="https://scholar.google.com/citation
   {% endif %}
 {% endfor %}
 
-
 **Conference Publications**
 {% for post in site.publications reversed %}
   {% if post.pub_status == 'conference' %}
@@ -34,10 +33,3 @@ You can also find my articles on my <a href="https://scholar.google.com/citation
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
-
-<!-- **Unreferred Papers**
-{% for post in site.unrefs reversed %}
-  {% include archive-single.html %}
-{% endfor %} -->
-
-<sup>*</sup> Equal authorship
