@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 {% include base_path %}
-Hello! My name is Zachary Novack, and I am currently a 2nd Year Computer Science PhD Student at UC San Diego, where I am advised by <a href="https://cseweb.ucsd.edu/~jmcauley/" target="_blank">Prof. Julian McAuley</a>. Previously, I studied statistics and machine learning at Carnegie Mellon University, and was primarily advised by <a href="https://www.zacharylipton.com/" target="_blank">Prof. Zachary Lipton</a> and <a href="https://sites.santafe.edu/~simon/" target="_blank">Prof. Simon DeDeo</a>. 
+Hello! My name is Zachary Novack, and I am currently a 2nd Year Computer Science PhD Student at UC San Diego, where I am advised by <a href="https://cseweb.ucsd.edu/~jmcauley/" target="_blank">Prof. Julian McAuley</a> and <a href="https://cseweb.ucsd.edu/~tberg/" target="_blank">Prof. Taylor Berg-Kirkpatrick</a>. Previously, I studied statistics and machine learning at Carnegie Mellon University, and was primarily advised by <a href="https://www.zacharylipton.com/" target="_blank">Prof. Zachary Lipton</a> and <a href="https://sites.santafe.edu/~simon/" target="_blank">Prof. Simon DeDeo</a>. 
 
 My research interests primarily lie in **Generative AI for Music Creation and Learning**. I am interested in making generative music systems both **controllable** and **interactive**, and a high level goal of mine is to leverage AI systems to help *real musicians* both **learn** and **perform** music.
 <!-- Specifically, I have been recently interested in controllable systems for music learning, predicting student classroom performance, and widely making deep learning an empirically-motivated research practice.  -->
