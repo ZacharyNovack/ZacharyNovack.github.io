@@ -6,7 +6,7 @@ authors: Zachary Novack, Julian McAuley, Taylor Berg-Kirkpatrick, Nicholas J. Br
 excerpt: 'This work presents DITTO, a novel method for controlling pretrained text-to-music diffusion models without any model finetuning, enabling a wide range of artistic editing and control tasks.'
 date: 2024-01-22
 # venue: ['International Conference on Learning Representations (ICLR), 2023', 'Spotlight at NeurIPS Workshop on The Benefits of Higher-Order Optimization in Machine Learning, 2022']
-# paperurl: 'https://arxiv.org/abs/2310.10772'
+paperurl: 'https://arxiv.org/abs/2401.12179'
 # code: 'https://github.com/zacharynovack/leadae'
 abs_title: ditto_2024_abs
 bib_title: ditto_2024_bib

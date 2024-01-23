@@ -26,6 +26,7 @@ In my free time, I enjoy making [experimental computer music](https://zacharynov
 <div style="height:250px;overflow:auto;border:0px;border-collapse: collapse;">
 <table border="none" style="border:0px;border-collapse: collapse;" rules="none">
 <colgroup><col span="1" style="width: 12%;"><col span="1" style="width: 88%;"></colgroup><tbody><tr><td>
+<b> January 2024:</b></td><td> Our work on <a href="https://ditto-music.github.io/web/">training-free editing and control for text-to-music diffusion models</a> is out on arxiv!</td></tr><tr><td> 
 <b> October 2023:</b></td><td> Our work on <a href="https://arxiv.org/abs/2302.02551">unsupervised lead sheet generation</a> is out on arxiv!</td></tr><tr><td> 
 <b> June 2023:</b></td><td> Started Research Scientist internship with Nicholas Bryan at the Adobe Research Audio Group!</td></tr><tr><td> 
 <b> April 2023:</b></td><td> Our work on <a href="https://arxiv.org/abs/2302.02551"> augmenting CLIP zero-shot inference with hierarchical label sets</a> was accepted to ICML 2023 in Honolulu, Hawaii!</td></tr><tr><td> 
