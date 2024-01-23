@@ -16,7 +16,7 @@ citation: '@misc{Novack2024Ditto,<br />
 title={DITTO: Diffusion Inference-Time T-Optimization for Music Generation},<br />
 author={Novack, Zachary and McAuley, Julian and Berg-Kirkpatrick, Taylor and Bryan, Nicholas J.},<br />
 year={2024}, <br />
-eprint={TBD}, <br />
+eprint={2401.12179}, <br />
 archivePrefix={arXiv}, <br />
 primaryClass={cs.SD}}'
 ---
