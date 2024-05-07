@@ -6,6 +6,7 @@ authors: Zachary Novack, Nikita Srivatsan, Taylor Berg-Kirkpatrick, Julian McAul
 excerpt: 'This work presents a novel method Lead-AE for conditional lead sheet generation, leveraging a discrete auto-encoder setup that allows for fully unsupervised training.'
 date: 2023-09-22
 # venue: ['International Conference on Learning Representations (ICLR), 2023', 'Spotlight at NeurIPS Workshop on The Benefits of Higher-Order Optimization in Machine Learning, 2022']
+venue: ['AES International Symposium on AI and the Musician']
 paperurl: 'https://arxiv.org/abs/2310.10772'
 # code: 'https://github.com/zacharynovack/leadae'
 abs_title: leadae_2023_abs
