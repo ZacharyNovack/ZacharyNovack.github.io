@@ -27,6 +27,13 @@ You can also find my articles on my <a href="https://scholar.google.com/citation
   {% endif %}
 {% endfor %}
 
+**Workshop Publications**
+{% for post in site.publications reversed %}
+  {% if post.pub_status == 'workshop' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
 **Non Refereed Publications**
 {% for post in site.publications reversed %}
   {% if post.pub_status == 'nonrefereed' %}

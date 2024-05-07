@@ -10,12 +10,11 @@ paperurl: 'https://arxiv.org/abs/2310.10772'
 # code: 'https://github.com/zacharynovack/leadae'
 abs_title: leadae_2023_abs
 bib_title: leadae_2023_bib
-pub_status: 'preprint'
+pub_status: 'workshop'
 code: 'https://github.com/ZacharyNovack/Lead-AE'
-citation: '@misc{novack2023unsupervised,<br />
+citation: '@inproceedings{novack2023unsupervised,<br />
 title={Unsupervised Lead Sheet Generation via Semantic Compression},<br />
 author={Novack, Zachary and Srivatsan, Nikita and Berg-Kirkpatrick, Taylor and McAuley, Julian},<br />
-year={2023}, <br />
-eprint={2310.10772}, <br />
-archivePrefix={arXiv},}'
+year={2024}, <br />
+booktitle={AES International Symposium on AI and the Musician}}'
 ---

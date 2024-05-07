@@ -10,13 +10,11 @@ paperurl: 'https://arxiv.org/abs/2401.12179'
 # code: 'https://github.com/zacharynovack/leadae'
 abs_title: ditto_2024_abs
 bib_title: ditto_2024_bib
-pub_status: 'preprint'
+pub_status: 'conference'
 website: 'https://ditto-music.github.io/web/'
-citation: '@misc{Novack2024Ditto,<br />
-title={DITTO: Diffusion Inference-Time T-Optimization for Music Generation},<br />
+citation: '@novack24ditto{Novack2024Ditto,<br />
+title={{DITTO}: Diffusion Inference-Time T-Optimization for Music Generation},<br />
 author={Novack, Zachary and McAuley, Julian and Berg-Kirkpatrick, Taylor and Bryan, Nicholas J.},<br />
 year={2024}, <br />
-eprint={2401.12179}, <br />
-archivePrefix={arXiv}, <br />
-primaryClass={cs.SD}}'
+booktitle={International Conference on Machine Learning (ICML)}}'
 ---
