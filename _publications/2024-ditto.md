@@ -13,7 +13,7 @@ abs_title: ditto_2024_abs
 bib_title: ditto_2024_bib
 pub_status: 'conference'
 website: 'https://ditto-music.github.io/web/'
-citation: '@novack24ditto{Novack2024Ditto,<br />
+citation: '@inproceedings{Novack2024Ditto,<br />
 title={{DITTO}: Diffusion Inference-Time T-Optimization for Music Generation},<br />
 author={Novack, Zachary and McAuley, Julian and Berg-Kirkpatrick, Taylor and Bryan, Nicholas J.},<br />
 year={2024}, <br />
