@@ -89,14 +89,14 @@ function toggleblock(blockId)
       <span style="color:black">{{ post.authors }}</span>
       {% for vn in post.venue %}
         <br>
-        <span style="color:black;font-style:italic">{{ vn }}</span>
         {% if post.modifier %}
           {% for md in post.modifier %}
             {% if post.modifier.indexOf(md) == post.venue.indexOf(vn) %}
-              <span style="color:rgb(255, 0, 0);font-style:italic"><b>{{ md }}</b></span>
+              <span style="color:rgb(255, 0, 0);font-style:normal"><b>{{ md }}</b></span>
             {% endif %}
           {% endfor %}
         {% endif %}
+        <span style="color:black;font-style:italic">{{ vn }}</span>
       {% endfor %}
       <br>
       {% if post.paperurl %}
