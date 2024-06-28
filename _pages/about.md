@@ -26,7 +26,8 @@ In my free time, I enjoy making [experimental computer music](https://zacharynov
 <div style="height:250px;overflow:auto;border:0px;border-collapse: collapse;">
 <table border="none" style="border:0px;border-collapse: collapse;" rules="none">
 <colgroup><col span="1" style="width: 12%;"><col span="1" style="width: 88%;"></colgroup><tbody><tr><td>
-<b> May 2024:</b></td><td> Our work on <a href="https://ditto-music.github.io/web/">training-free editing and control for text-to-music diffusion models</a> is accepted at ICML 2024 in Vienna, and our work on <a href="https://arxiv.org/abs/2302.02551">unsupervised lead sheet generation</a> is accepted at the AES Symposium for AI and the Musician in Boston!</td></tr><tr><td> 
+<b> June 2024:</b></td><td> Our work on <a href="https://ditto-music.github.io/ditto2/">accelerated training-free editing and control for text-to-music diffusion models</a> is accepted at ISMIR 2024 in San Francisco!</td></tr><tr><td> 
+<b> May 2024:</b></td><td> Our work on <a href="https://ditto-music.github.io/web/">training-free editing and control for text-to-music diffusion models</a> is accepted at ICML 2024 in Vienna as an ORAL, and our work on <a href="https://arxiv.org/abs/2302.02551">unsupervised lead sheet generation</a> is accepted at the AES Symposium for AI and the Musician in Boston!</td></tr><tr><td> 
 <b> January 2024:</b></td><td> Our work on <a href="https://ditto-music.github.io/web/">training-free editing and control for text-to-music diffusion models</a> is out on arxiv!</td></tr><tr><td> 
 <b> October 2023:</b></td><td> Our work on <a href="https://arxiv.org/abs/2302.02551">unsupervised lead sheet generation</a> is out on arxiv!</td></tr><tr><td> 
 <b> June 2023:</b></td><td> Started Research Scientist internship with Nicholas Bryan at the Adobe Research Audio Group!</td></tr><tr><td> 
