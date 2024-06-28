@@ -97,7 +97,7 @@ function toggleblock(blockId)
           var mdIdx = 0;
         </script>
           {% for md in post.modifier %}
-            {% if vnIdx == mdIdx %}
+            {% if vnIdx === mdIdx %}
               <span style="color:rgb(255, 0, 0);font-style:normal"><b>{{ md }}</b></span>
             {% endif %}
             <script>
