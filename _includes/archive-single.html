@@ -87,20 +87,28 @@ function toggleblock(blockId)
       {% endif %} -->
       <br>
       <span style="color:black">{{ post.authors }}</span>
-      var vnIdx = 0;
+      <script>
+        var vnIdx = 0;
+      </script>
       {% for vn in post.venue %}
         <br>
         {% if post.modifier %}
+        <script>
           var mdIdx = 0;
+        </script>
           {% for md in post.modifier %}
             {% if vnIdx == mdIdx %}
               <span style="color:rgb(255, 0, 0);font-style:normal"><b>{{ md }}</b></span>
             {% endif %}
-            mdIdx = mdIdx + 1;
+            <script>
+              var mdIdx = mdIdx + 1;
+            </script>
           {% endfor %}
         {% endif %}
         <span style="color:black;font-style:italic">{{ vn }}</span>
-        vnIdx = vnIdx + 1;
+        <script>
+          var vnIdx = vnIdx + 1;
+        </script>
       {% endfor %}
       <br>
       {% if post.paperurl %}
