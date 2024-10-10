@@ -27,6 +27,7 @@ In my free time, I enjoy making [experimental computer music](https://zacharynov
 <table border="none" style="border:0px;border-collapse: collapse;" rules="none">
 <colgroup><col span="1" style="width: 12%;"><col span="1" style="width: 88%;"></colgroup><tbody><tr><td>
 <b> October 2024:</b></td><td> Our work on <a href="https://presto-music.github.io/web/">accelerating text-to-music diffusion models</a> is out on arXiv!</td></tr><tr><td> 
+<b> October 2024:</b></td><td> Our work on <a href="https://arxiv.org/abs/2410.02271">long-form text-audio contrastive learning</a> is out on arXiv!</td></tr><tr><td> 
 <b> September 2024:</b></td><td> Our work on <a href="https://pnlong.github.io/PDMX.demo/">the largest dataset of public domain of symbolic music scores</a> is out on arXiv!</td></tr><tr><td> 
 <b> June 2024:</b></td><td> Our work on <a href="https://ditto-music.github.io/ditto2/">accelerated training-free editing and control for text-to-music diffusion models</a> is accepted at ISMIR 2024 in San Francisco!</td></tr><tr><td> 
 <b> May 2024:</b></td><td> Our work on <a href="https://ditto-music.github.io/web/">training-free editing and control for text-to-music diffusion models</a> is accepted at ICML 2024 in Vienna as an ORAL, and our work on <a href="https://arxiv.org/abs/2302.02551">unsupervised lead sheet generation</a> is accepted at the AES Symposium for AI and the Musician in Boston!</td></tr><tr><td> 
