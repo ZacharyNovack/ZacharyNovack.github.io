@@ -11,7 +11,7 @@ paperurl: 'https://arxiv.org/abs/2410.05167'
 # code: 'https://github.com/pnlong/PDMX'
 abs_title: presto_2025_abs
 bib_title: presto_2025_bib
-pub_status: 'preprint'
+pub_status: 'conference'
 website: 'https://presto-music.github.io/web/'
 citation: '@inproceedings{Novack2025Presto,<br />
     title={Presto! Distilling steps and layers for accelerating music generation.}, <br />
