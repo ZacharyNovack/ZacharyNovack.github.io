@@ -5,7 +5,7 @@ permalink: /publication/presto
 authors: Zachary Novack, Ge Zhu, Jonah Casebeer, Julian McAuley, Taylor Berg-Kirkpatrick, Nicholas J. Bryan
 excerpt: 'This work presents Presto!, a new method for accelerating audio-domain TTM models, which works by distilling the model to drop both diffusion steps and interior layers of the model itself, achieving <0.5s for generating 32s of 44.1kHz stereo audio.'
 date: 2025-01-22
-# venue: ['International Society of Music Information Retrieval (ISMIR), 2024']
+venue: ['International Conference on Learning Representations (ICLR), 2025']
 # venue: ['International Conference on Learning Representations (ICLR), 2023', 'Spotlight at NeurIPS Workshop on The Benefits of Higher-Order Optimization in Machine Learning, 2022']
 paperurl: 'https://arxiv.org/abs/2410.05167'
 # code: 'https://github.com/pnlong/PDMX'
