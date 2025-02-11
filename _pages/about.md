@@ -26,7 +26,7 @@ In my free time, I enjoy making [experimental computer music](https://zacharynov
 <div style="height:250px;overflow:auto;border:0px;border-collapse: collapse;">
 <table border="none" style="border:0px;border-collapse: collapse;" rules="none">
 <colgroup><col span="1" style="width: 12%;"><col span="1" style="width: 88%;"></colgroup><tbody><tr><td>
-<b> January 2025:</b></td><td> Our work on <a href="https://presto-music.github.io/web/">accelerating text-to-music diffusion models</a> is accepted at ICLR 2025 in Singapore!</td></tr><tr><td> 
+<b> January 2025:</b></td><td> Our work on <a href="https://presto-music.github.io/web/">accelerating text-to-music diffusion models</a> is accepted at ICLR 2025 in Singapore as a Spotlight!</td></tr><tr><td> 
 <b> December 2024:</b></td><td> Three works from the UCSD MUSAIC Group accepted at ICASSP 2025!</td></tr><tr><td> 
 <b> October 2024:</b></td><td> Our work on <a href="https://presto-music.github.io/web/">accelerating text-to-music diffusion models</a> is out on arXiv!</td></tr><tr><td> 
 <b> October 2024:</b></td><td> Our work on <a href="https://arxiv.org/abs/2410.02271">long-form text-audio contrastive learning</a> is out on arXiv!</td></tr><tr><td> 
