@@ -86,7 +86,17 @@ function toggleblock(blockId)
         {{ post.citation }}
       {% endif %} -->
       <br>
-      <span style="color:black">{{ post.authors }}</span>
+      <span style="color:black">
+        {% assign authors_list = post.authors | split: "," %}
+        {% for author in authors_list %}
+          {% assign author_trimmed = author | strip %}
+          {% if author_trimmed == "Zachary Novack" %}
+            <b>{{ author_trimmed }}</b>{% if forloop.last == false %}, {% endif %}
+          {% else %}
+            {{ author_trimmed }}{% if forloop.last == false %}, {% endif %}
+          {% endif %}
+        {% endfor %}
+      </span>
       {% for vn in post.venue %}
         <br>
         <span style="color:black;font-style:italic">{{ vn }}</span>
