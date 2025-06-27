@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISMIR 2025 Authors!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 1px 30px 1px 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+            margin-top: 1px;
+            font-size: 1.1em;
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 600px;
+            margin: 20px 0;
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .top-row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 50px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .left-controls {
+            flex: 1 1 350px;
+            max-width: 1020px;
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .slider-container, .search-container {
+            width: 100%;
+            margin: 0 0 18px 0;
+            box-sizing: border-box;
+        }
+        
+        .right-stats {
+            flex: 1 1 350px;
+            min-width: 120px;
+            max-width: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+        }
+        
+        .right-stats .stat-item {
+            width: 100%;
+            margin: 0;
+        }
+        
+        .stats {
+            display: none;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+            border-radius: 15px;
+            min-width: 150px;
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(116, 185, 255, 0.4);
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 50px;
+            color: #e74c3c;
+            font-size: 1.1em;
+            background: #fdf2f2;
+            border-radius: 10px;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .slider-container {
+            text-align: center;
+            margin: 0 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .slider-label {
+            font-size: 1.2em;
+            color: #2c3e50;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        #sliderValue {
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .slider {
+            width: 300px;
+            height: 8px;
+            border-radius: 5px;
+            background: #ddd;
+            outline: none;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+            -webkit-appearance: none;
+        }
+        
+        .slider:hover {
+            opacity: 1;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #3498db;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #3498db;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .author-detail-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(116, 185, 255, 0.4);
+        }
+        
+        .back-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            margin-bottom: 20px;
+        }
+        
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        .author-name {
+            font-size: 2.2em;
+            font-weight: 300;
+            margin: 0;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .author-paper-count {
+            font-size: 1.2em;
+            opacity: 0.9;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .papers-list {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .paper-item {
+            padding: 20px;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .paper-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .paper-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .paper-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .paper-authors {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            line-height: 1.3;
+        }
+        
+        .paper-authors .highlight-author {
+            background: linear-gradient(120deg, #a8e6cf 0%, #88d8c0 100%);
+            color: #2c3e50;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .click-hint {
+            text-align: center;
+            padding: 15px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-style: italic;
+        }
+        
+        .search-container {
+            text-align: center;
+            margin: 10px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .search-label {
+            font-size: 1.2em;
+            color: #2c3e50;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        .search-input-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .search-input {
+            padding: 12px 16px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            font-size: 1em;
+            width: 300px;
+            max-width: 100%;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        
+        .search-input:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+        }
+        
+        .search-button, .clear-button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .search-button {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+        }
+        
+        .search-button:hover {
+            background: linear-gradient(135deg, #2980b9, #1f618d);
+            transform: translateY(-2px);
+        }
+        
+        .clear-button {
+            background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+            color: white;
+        }
+        
+        .clear-button:hover {
+            background: linear-gradient(135deg, #7f8c8d, #6c7b7d);
+            transform: translateY(-2px);
+        }
+        
+        .search-result {
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+        
+        .search-result.found {
+            background: linear-gradient(135deg, #d5f4e6, #a8e6cf);
+            color: #27ae60;
+            border: 1px solid #a8e6cf;
+        }
+        
+        .search-result.not-found {
+            background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
+            color: #e17055;
+            border: 1px solid #fdcb6e;
+        }
+        
+        .search-result.found .author-link {
+            color: #27ae60;
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .search-result.found .author-link:hover {
+            color: #219a52;
+        }
+        
+        @media (max-width: 768px) {
+            .top-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .left-controls {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .right-stats {
+                justify-content: flex-start;
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .top-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            .left-controls, .right-stats {
+                max-width: 100%;
+                min-width: 0;
+                width: 100%;
+                align-items: stretch;
+            }
+            .right-stats {
+                margin-top: 20px;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ISMIR 2025 Authors!</h1>
+        <p class="subtitle" id="subtitle">All authors (1+ publication)</p>
+        
+        <div class="top-row">
+            <div class="left-controls">
+                <div class="slider-container">
+                    <label for="minPapersSlider" class="slider-label">
+                        Minimum Papers: <span id="sliderValue">1</span>
+                    </label>
+                    <input type="range" id="minPapersSlider" min="1" max="7" value="1" class="slider">
+                </div>
+                <div class="search-container">
+                    <label for="authorSearch" class="search-label">
+                        🔍 Search for a specific author:
+                    </label>
+                    <div class="search-input-container">
+                        <input type="text" id="authorSearch" placeholder="Enter author name..." class="search-input">
+                        <button id="searchButton" class="search-button">Search</button>
+                        <button id="clearSearch" class="clear-button" style="display: none;">Clear</button>
+                    </div>
+                    <div id="searchResult" class="search-result" style="display: none;"></div>
+                </div>
+            </div>
+            <div class="right-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalAuthors">-</span>
+                    <span class="stat-label">Total Unique Authors</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="multiPaperAuthors">-</span>
+                    <span class="stat-label">Authors with <span id="sliderValueInline">1</span> or more papers</span>
+                </div>
+                <!-- <div class="stat-item">
+                    <span class="stat-number" id="totalPapers">-</span>
+                    <span class="stat-label">Total Papers</span>
+                </div> -->
+            </div>
+        </div>
+        
+        <div id="loading" class="loading">
+            Loading and analyzing paper data...
+        </div>
+        
+        <div id="error" class="error" style="display: none;">
+            Error loading the CSV file. Please make sure the CSV file is available.
+        </div>
+        
+        <div id="content" style="display: none;">
+            <div class="click-hint">
+                💡 Click on any author's bar to see their individual papers
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="authorChart"></canvas>
+            </div>
+        </div>
+        
+        <div id="authorDetail" style="display: none;">
+            <div class="author-detail-header">
+                <button id="backButton" class="back-button">← Back to Overview</button>
+                <h2 id="authorName" class="author-name"></h2>
+                <div class="author-stats">
+                    <span id="authorPaperCount" class="author-paper-count"></span>
+                </div>
+            </div>
+            
+            <div class="papers-list" id="papersList">
+                <!-- Papers will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let chart = null;
+        let allAuthorCounts = {};
+        let allPapersData = [];
+        let currentView = 'overview'; // 'overview' or 'author-detail'
+        
+        async function loadAndProcessData() {
+            try {
+                // CSV data - replace this string with your actual CSV content
+                const csvData = `Paper Title,Authors
+"Reformulating Soft Dynamic Time Warping: Insights into Target Artifacts and Prediction Quality","Johannes Zeitler, Meinard Müller"
+"Audio synthesizer inversion in symmetric parameter spaces with approximately equivariant flow matching","Ben Hayes, Charalampos Saitis, György Fazekas"
+"Count The Notes: Histogram-Based Supervision for Automatic Music Transcription","Jonathan Yaffe, Ben Maman, Meinard Müller, Amit Bermano"
+"Video-Guided Text-to-Music Generation Using Public Domain Movie Collections","Haven Kim, Zachary Novack, Weihan Xu, Julian McAuley, Hao-Wen Dong"
+"Versatile Music-for-Music Modeling via Function Alignment","Junyan Jiang, Daniel Chin, Liwei Lin, Xuanjie Liu, Gus Xia"
+"Joint Object Detection and Sound Source Separation","Sunyoo Kim, Yunjeong Choi, Doyeon Lee, Seoyoung Lee, Eunyi Lyou, Seungju Kim, Junhyug Noh, Joonseok Lee"
+"Generating Symbolic Music from Natural Language Prompts using an LLM-Enhanced Dataset","Weihan Xu, Julian McAuley, Taylor Berg-Kirkpatrick, Shlomo Dubnov, Hao-Wen Dong"
+"MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI","Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, Emilia Gómez, Martín Rocamora"
+"A Survey on Vision-to-Music Generation: Methods, Datasets, Evaluation, and Challenges","Zhaokai Wang, Chenxi Bao, Le Zhuo, Jingrui Han, Yang Yue, Yihong Tang, Victor Shea-Jay Huang, Yue Liao"
+"Measuring Sensory Dissonance In Multi-Track Music Recordings: A Case Study with Wind Quartets","Simon Schwär, Stefan Balke, Meinard Müller"
+"SLAP: Siamese Language-Audio Pretraining without negative samples for Music Understanding","Julien Guinot, Alain Riou, Elio Quinton, George Fazekas"
+"GD-Retriever: Controllable generative text-music retrieval with diffusion models","Julien Guinot, Elio Quinton, George Fazekas"
+"Quantifying regularity in music structure analysis","Brian McFee"
+"LiLAC: A Lightweight Latent ControlNet for Musical Audio Generation","Tom Baker, Javier Nistal"
+"ITO-Master: Inference-Time Optimization for Audio Effects Modeling of Music Mastering Processors","Junghyun Koo, Marco Martinez-Ramirez, WeiHsiang Liao, Giorgio Fabbro, Michele Mancusi, Yuki Mitsufuji"
+"Instruct-MusicGen: Unlocking Text-to-Music Editing for Music Language Models via Instruction Tuning","Yixiao Zhang, Yukara Ikemiya, Woosung Choi, Naoki Murata, Marco Martínez-Ramírez, Liwei Lin, Gus Xia, Wei-Hsiang Liao, Yuki Mitsufuji, Simon Dixon"
+"Improving BERT for symbolic music understanding using token denoising and pianoroll prediction","Jun-You Wang, Li Su"
+"An Evaluation Strategy for Local Key Estimation: Exploiting Cross-Version Consistency","Yiwei Ding, Yannik Venohr, Christof Weiss"
+"Sheet Music Benchmark: Standardized Optical Music Recognition Evaluation","Juan C. Martinez-Sevilla, Joan Cerveto-Serrano, Noelia Luna-Barahona, Greg Chapman, Craig Sapp, David Rizo, Jorge Calvo-Zaragoza"
+"PeakNetFP: Peak-based Neural Audio Fingerprinting Robust to Extreme Time Stretching","Guillem Cortès-Sebastià, Benjamin Martin, Emilio Molina, Xavier Serra, Romain Hennequin"
+"RISE: Music Rearrangement for Realtime Intensity Synchronization with Exercise","Alexander Wang, Chris Donahue, Dhruv Jain"
+"Expanding the HAISP Dataset: AI's Impact on Songwriting Across Two AI Song Contests","Lidia Morris, Michele Newman, Xinya Tang, Renee Singh, Marcel Vélez Vásquez, Rebecca Leger, Jin Ha Lee"
+"Simple and Effective Semantic Song Segmentation","Filip Korzeniowski, Richard Vogl"
+"PianoVAM: A Multimodal Piano Performance Dataset","Yonghyun Kim, Junhyung Park, Joonhyung Bae, Kirak Kim, Taegyun Kwon, Alexander Lerch, Juhan Nam"
+"TOMI: Transforming and Organizing Music Ideas for Multi-Track Compositions with Full-Song Structure","Qi He, Ziyu Wang, Gus Xia"
+"Joint Transcription of Acoustic Guitar Strumming Directions and Chords","Sebastian Murgul, Johannes Schimper, Michael Heizmann"
+"A Systematic Evaluation of Real-Time Audio Score Following for Piano Performance","Jiyun Park, Carlos Eduardo Cancino-Chacón, Suhit Chiruthapudi, Juhan Nam"
+"Exploring the Feasibility of LLMs for Automated Music Emotion Annotation","Meng Yang, Jon McCormack, Maria Teresa Llano, Wanchao Su"
+"Enhancing Music Recommender Systems with Multimedia Content: A Context-Aware Approach","Oleg Lesota, Veronica Clavijo, Attia Rizwani, Markus Schedl, Bruce Ferwerda"
+"Predicting Flutist Onset Timing in Duet Performance: A Multimodal Analysis of Gesture and Breath Cues","Jaeran Choi, Taegyun Kwon, Juhan Nam"
+"Scaling Self-Supervised Representation Learning for Symbolic Piano Performance","Louis Bradshaw, Alexander Spangher, Honglu Fan, Stella Biderman, Simon Colton"
+"When Voices Interleave: Timing Deviations in Six Performances of Telemann's Fantasias for Solo Flute","Patrice Thibaud, Mathieu Giraud, Yann Teytaut"
+"Optical Music Recognition of Jazz Lead Sheets","Juan Carlos Martinez-Sevilla, Francesco Foscarin, Patricia Garcia-Iasci, David Rizo, Jorge Calvo-Zaragoza, Gerhard Widmer"
+"What song now? Personalized Rhythm Guitar Learning in Western Popular Music","Zakaria Hassein-Bey, Yohann Abbou, Alexandre d'Hooge, Mathieu Giraud, Gilles Guillemain, Aurélien Jeanneau"
+"Towards Robust Automatic Music Transcription by Measuring Cross-Version Consistency","Yannik Venohr, Yiwei Ding, Christof Weiss"
+"A Multidimensional Approach to Opera Analysis: Harmony, Tempo, and Dramatic Interaction in Wagner's Siegfried Act III","Pascal Schmolenzky, Stephanie Klauk, Rainer Kleinertz, Christof Weiss, Meinard Müller"
+"Enabling Empirical Analysis of Piano Performance Rehearsal with the <Anonymized> MIDI Dataset","Alia Morsi, Suhit Chiruthapudi, Silvan Peter, Ivan Pilkov, Laura Bishop, Akira Maezawa, Xavier Serra, Carlos Eduardo Cancino-Chacón"
+"Investigating Music Track Liking in the Halo of Album Covers","Oleg Lesota, Anna Hausberger, Ivanna Pshenychna, Oleksandr Shvydanenko, Olha Yehorova, Markus Schedl"
+"PianoBind: A Multi-modal Joint Embedding Model for Pop-piano Music","Hayeon Bang, Eunjin Choi, Seungheon Doh, Juhan Nam"
+"Understanding Performance Limitations in Automatic Drum Transcription","Philipp Weyers, Christian Uhle, Meinard Müller, Matthias Lang"
+"Conditional Diffusion as Latent Constraints for Unconditional Symbolic Music Generation Models","Matteo Pettenò, Alessandro Mezza, Alberto Bernardini"
+"dPLP: A Differentiable Version of Predominant Local Pulse Estimation","Ching-Yu Chiu, Sebastian Strahl, Meinard Müller"
+"Coloring Music: Bridging Music and Color Palettes for Graphic Design","Takayuki Nakatsuka, Masahiro Hamasaki, Masataka Goto"
+"Radif Corpus; Symbolic Dataset for Non-metric Iranian Classical Music","Maziar Kanani, Seán O'Leary, James McDermott"
+"Beyond Notation: A Digital Platform for Transcribing and Analyzing Oral Melodic Traditions","Jonathan Myers, Dard Neuman"
+"Unifying Continuous and Discrete Compressed Representations of Audio","Marco Pasini, Stefan Lattner, George Fazekas"
+"User-Guided Generative Source Separation","Yutong Wen, Minje Kim, Paris Smaragdis"
+"Fx-Encoder++: Extracting Instrument-Wise Audio Effect Representations from Mixtures","Yen-Tung Yeh, Junghyun Koo, Marco Martínez-Ramírez, Wei-Hsiang Liao, Yi-Hsuan Yang, Yuki Mitsufuji"
+"Automatic Melody Reduction via Shortest Path Finding","Ziyu Wang, Yuxuan Wu, Roger Dannenberg, Gus Xia"
+"IdolSongsJp Corpus: A Multi-Singer Song Corpus in the Style of Japanese Idol Groups","Hitoshi Suda, Junya Koguchi, Shunsuke Yoshida, Tomohiko Nakamura, Satoru Fukayama, Jun Ogata"
+"Melodic and Metrical Elements of Expressiveness in Hindustani Vocal Music","Yash Bhake, Ankit Anand, Preeti Rao"
+"Lose the Frames: Exact Metrics for More Responsible Music Structure Analysis Evaluations","Qingyang Xi, biran mcfee"
+"Human vs. Machine: Comparing Selection Strategies in Active Learning for Optical Music Recognition","Juan Pedro Martinez-Esteso, Alejandro Galan-Cuenca, Carlos Pérez-Sancho, Francisco J. Castellanos, Antonio Javier Gallego"
+"Scalable and Degradation-Robust Neural Music Fingerprinting","Recep Oguz Araz, Guillem Cortès-Sebastià, Emilio Molina, Joan Serra, Xavier Serra, Yuhki Mitsufuji, Dmitry Bogdanov"
+"On the de-duplication of the Lakh MIDI dataset","Eunjin Choi, Hyerin Kim, Jiwoo Ryu, Juhan Nam, Dasaem Jeong"
+"Singing voice separation from Carnatic Music mixtures using a regression-guided latent diffusion model","Genís Plaja-Roglans, Xavier Serra, Martín Rocamora"
+"Tuning Matters: Analyzing Musical Tuning Bias in Neural Vocoders","Hans-Ulrich Berendes, Ben Maman, Meinard Müller"
+"MIDI-VALLE: Improving Expressive Piano Performance Synthesis Through Neural Codec Language Modelling","Jingjing Tang, Xin Wang, Zhe Zhang, Junichi Yamagish, Geraint Wiggins, George Fazekas"
+"CultureMERT: Continual Pre-Training for Cross-Cultural Music Representation Learning","Angelos-Nikolaos Kanatas, Charilaos Papaioannou, Alexandros Potamianos"
+"Towards Human-in-the-loop Onset Detection: A Transfer Learning Approach for Maracatu","António PintoINESC TEC, University of Porto - Faculty of Engineering"
+"Phylo-Analysis of Folk Traditions: A Methodology for the Hierarchical Musical Similarity Analysis","Hilda Romero-Velo, Gilberto Bernardes, Susana Ladra, José R. Paramá, Fernando Silva"
+"Universal Music Representations? Evaluating Foundation Models on World Music Corpora","Charilaos Papaioannou, Emmanouil Benetos, Alexandros Potamianos"
+"Emergent musical properties of a transformer under contrastive self-supervised learning","Yuexuan KONG, Gabriel Mesegues-Brocal, Vincent Lostanlen, Mathieu Lagrange, Romain Hennequin"
+"AI-Generated Song Detection via Lyrics Transcripts","Markus Frohmann, Elena Epure, Gabriel Meseguer Brocal, Markus Schedl, Romain Hennequin"
+"Beyond Genre: Diagnosing Bias in Music Embeddings Using Concept Activation Vectors","Roman Gebhardt, Arne Kuhle, Eylül Bektur"
+"Looking beyond averaged metrics in Music Source Separation","Saurjya Sarkar, Victoria Moomijan, Basil Woods, Emmanouil Benetos, Mark Sandler"
+"Adaptive Path of Prediction: An unsupervised method for modeling note-level informational hierarchy of polyphony","Xiaoxuan Wang, Martin Rohrmeier"
+"A Fourier Explanation of AI-music Artifacts","Darius Afchar, Gabriel Meseguer Brocal, Kamil Akesbi, Romain Hennequin"
+"High-Resolution Sustain Pedal Depth Estimation from Piano Audio across Room Acoustics","Hanwen Zhang, Kun Fang, Ziyu Wang, Ichiro Fujinaga"
+"Playability Prediction in Digital Guitar Learning Using Interpretable Student and Song Representations","Manuel Müllerschön, Anssi Klapuri, Marcelo Rodriguez, Christian Cardin"
+"Estimating Musical Surprisal from Audio in Autoregressive Diffusion Model Noise Spaces","Mathias Rose Bjare, Stefan Lattner, Gerhard Widmer"
+"GOAT: A Large Dataset of Paired Guitar Audio Recordings and Tablatures","Jackson Loth, Pedro Sarmento, Saurjya Sarkar, Zixun Guo, Mathieu Barthet, Mark Sandler"
+"CMI-Bench: A Comprehensive Benchmark for Evaluating Music Instruction Following","Yinghao MA, Siyou Li, Juntao Yu, Emmanouil Benetos, Akira Maezawa"
+"Quantize & Factorize: A fast yet effective unsupervised audio representation without deep learning","Jaehun Kim, Matthew C. McCallum, Andreas F. Ehmann"
+"LoopGen: Training-Free Loopable Music Generation","Davide Marincione, Giorgio Strano, Donato Crisostomi, Roberto Ribuoli, Emanuele Rodolà"
+"Identification and Clustering of Unseen Ragas in Indian Art Music","Parampreet Singh, Adwik Gupta, Aakarsh Mishra, Vipul Arora"
+"Barwise Section Boundary Detection in Symbolic Music Using Convolutional Neural Networks","Omar Eldeeb, Martin Malandro"
+"Investigating an Overfitting and Degeneration Phenomenon in Self-Supervised Multi-Pitch Estimation","Frank Cwitkowitz, Zhiyao Duan"
+"A Generative Model of Musical Form","Markus Neuwirth"
+"Fretboardflow: A Dual-Model Approach to Optimize Chord Voicings on the Guitar Fretboard","Marcel Vélez Vásquez, Mariëlle Baelemans, Jonathan Driedger, John Ashley Burgoyne"
+"From Discord to Harmony: Consonance-based Smoothing for Improved Audio Chord Estimation","Andrea Poltronieri, Xavier Serra, Martín Rocamora"
+"STAGE: Stemmed Accompaniment Generation Through Prefix-Based Conditioning","Giorgio Strano, Chiara Ballanti, Donato Crisostomi, Michele Mancusi, Luca Cosmo, Emanuele Rodolà"
+"Adding temporal musical controls on top of pretrained generative models","Sarah Nabi, Nils Demerlé, Geoffroy Peeters, Frederic Bevilacqua, Philippe Esling"
+"Keyboard Temperament Estimation from Symbolic Data: A Case Study on Bach's Well-Tempered Clavier","Peter Van KranenburgUtrecht University, Meertens Institute, Gerben Bisschop"
+"Expotion: Facial Expression and Motion Control for Multimodal Music Generation","Fathinah Izzati, Xinyue Li, Gus Xia"
+"The Florence Price Art Song Dataset and Piano Accompaniment Generator","Tao-Tao He, Martin Malandro, Douglas Shadle"
+"Assessing the Alignment of Audio Representations With Timbre Similarity Ratings","Haokun Tian, Stefan Lattner, Charalampos Saitis"
+"Gregorian melody, modality, and memory: segmenting chant with Bayesian nonparametrics","Vojtěch Lanz, Jan Hajič jr."
+"GlobalMood: A cross-cultural benchmark for music emotion recognition","Harin Lee, Elif Celen, Peter Harrison, Manuel Anglada-Tort, Pol van Rijn, Minsu Park, Marc Schönwiesner, Nori Jacoby"
+"Modeling the Difficulty of Saxophone Music","Šimon Libřický, Jan Hajič jr."
+"Improving Neural Pitch Estimation with SWIPE Kernels","David Marttila"
+"Do Music Source Separation Models Preserve Spatial Information in Binaural Audio?","Richa Namballa, Agnieszka Roginska, Magdalena Fuentes"
+"Are you really listening? Boosting Perceptual Awareness in Music-QA Benchmarks","Yongyi Zang, Sean O'Brien, Taylor Berg-Kirkpatrick, Julian McAuley, Zachary Novack"
+"Refining music sample identification with a self-supervised graph neural network","Aditya Bhattacharjee, Ivan Meresman Higgs, Mark Sandler, Emmanouil Benetos"
+"Aligning Text-to-Music Evaluation with Human Preferences","Yichen Huang, Zachary Novack, Koichi Saito, Jiatong Shi, Shinji Watanabe, Yuki Mitsufuji, John Thickstun, Chris Donahue"
+"The Rhythm In Anything: Audio-Prompted Drums Generation with Masked Language Modeling","Patrick O'Reilly, Julia Barnett, Hugo Flores Garcia, Annie Chu, Nathan Pruyne, Prem Seetharaman, Bryan Pardo"
+"The jam_bot, a Real-Time System for Collaborative Free Improvisation with Music Language Models","Lancelot Blanchard, Perry Naseck, Stephen Brade, Kimaya Lecamwasam, Jordan Rudess, Cheng-Zhi Anna Huang, Joseph Paradiso"
+"Exploring Network Adaptations for Minimum Latency Real-Time Piano Transcription","Patricia Hu, Silvan Peter, Jan Schlüter, Gerhard Widmer"
+"MAIA: An Inpainting-Based Approach for Music Adversarial Attacks","Yuxuan Liu, Peihong Zhang, Rui Sang, Zhixin Li, Shengchen Li"`;
+                
+                // Parse CSV
+                const parsed = Papa.parse(csvData, {
+                    header: true,
+                    skipEmptyLines: true
+                });
+                
+                if (parsed.errors.length > 0) {
+                    console.error('CSV parsing errors:', parsed.errors);
+                }
+                
+                const papers = parsed.data;
+                
+                // Store all papers data globally
+                allPapersData = papers;
+                
+                // Count author frequencies
+                const authorCounts = {};
+                let totalPapers = 0;
+                
+                papers.forEach(paper => {
+                    if (paper['Paper Title'] && paper['Authors']) {
+                        totalPapers++;
+                        // Split authors by comma and clean up
+                        const authors = paper['Authors']
+                            .split(',')
+                            .map(author => author.trim())
+                            .filter(author => author.length > 0);
+                        
+                        authors.forEach(author => {
+                            authorCounts[author] = (authorCounts[author] || 0) + 1;
+                        });
+                    }
+                });
+                
+                // Store all author counts globally
+                allAuthorCounts = authorCounts;
+                
+                // Set slider max to the highest paper count
+                const maxPapers = Math.max(...Object.values(authorCounts));
+                document.getElementById('minPapersSlider').max = maxPapers;
+                
+                // Filter authors with more than 1 paper and sort
+                const frequentAuthors = Object.entries(authorCounts)
+                    .filter(([author, count]) => count >= 1)
+                    .sort((a, b) => b[1] - a[1]);
+                
+                // Update stats
+                document.getElementById('totalAuthors').textContent = Object.keys(authorCounts).length;
+                document.getElementById('multiPaperAuthors').textContent = frequentAuthors.length;
+                // document.getElementById('totalPapers').textContent = totalPapers;
+                
+                // Create chart
+                createChart(frequentAuthors);
+                
+                // Set up slider event listener
+                setupSlider();
+                
+                // Set up back button event listener
+                setupBackButton();
+                
+                // Set up search functionality
+                setupSearch();
+                
+                // Show content
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+                
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').innerHTML = `
+                    <strong>Error loading data:</strong><br>
+                    ${error.message}<br><br>
+                    <small>Make sure to replace 'PASTE_YOUR_CSV_DATA_HERE' with your actual CSV content.</small>
+                `;
+            }
+        }
+        
+        function createChart(frequentAuthors) {
+            const ctx = document.getElementById('authorChart').getContext('2d');
+            
+            const labels = frequentAuthors.map(([author, count]) => author);
+            const data = frequentAuthors.map(([author, count]) => count);
+            
+            // Generate colors
+            const colors = frequentAuthors.map((_, index) => {
+                const hue = (index * 137.5) % 360; // Golden angle approximation
+                return `hsla(${hue}, 70%, 60%, 0.8)`;
+            });
+            
+            const borderColors = colors.map(color => color.replace('0.8', '1'));
+            
+            // Destroy existing chart if it exists
+            if (chart) {
+                chart.destroy();
+            }
+            
+            chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Number of Papers',
+                        data: data,
+                        backgroundColor: colors,
+                        borderColor: borderColors,
+                        borderWidth: 2,
+                        borderRadius: 8,
+                        borderSkipped: false,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '',
+                            font: {
+                                size: 1,
+                                weight: 'bold'
+                            },
+                            padding: 20
+                        },
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                            titleColor: 'white',
+                            bodyColor: 'white',
+                            borderColor: 'rgba(255, 255, 255, 0.2)',
+                            borderWidth: 1,
+                            cornerRadius: 8,
+                            callbacks: {
+                                title: function(context) {
+                                    return context[0].label;
+                                },
+                                label: function(context) {
+                                    const count = context.raw;
+                                    return `${count} paper${count > 1 ? 's' : ''} - Click to view details`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1,
+                                font: {
+                                    size: 12
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Number of Papers',
+                                font: {
+                                    size: 16,
+                                    weight: 'bold'
+                                }
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.1)'
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                maxRotation: 45,
+                                minRotation: 45,
+                                font: {
+                                    size: 14
+                                },
+                                maxTicksLimit: false,
+                                autoSkip: false
+                            },
+                            title: {
+                                display: true,
+                                text: 'Authors (Click to view papers)',
+                                font: {
+                                    size: 16,
+                                    weight: 'bold'
+                                }
+                            },
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    animation: {
+                        duration: 1500,
+                        easing: 'easeOutBounce'
+                    },
+                    hover: {
+                        animationDuration: 200
+                    },
+                    onClick: (event, elements) => {
+                        if (elements.length > 0) {
+                            const index = elements[0].index;
+                            const authorName = chart.data.labels[index];
+                            showAuthorDetail(authorName);
+                        }
+                    }
+                }
+            });
+        }
+        
+        function showAuthorDetail(authorName) {
+            currentView = 'author-detail';
+            
+            // Hide overview content
+            document.getElementById('content').style.display = 'none';
+            document.querySelector('.slider-container').style.display = 'none';
+            
+            // Get papers for this author
+            const authorPapers = allPapersData.filter(paper => {
+                if (paper['Authors']) {
+                    const authors = paper['Authors']
+                        .split(',')
+                        .map(author => author.trim());
+                    return authors.includes(authorName);
+                }
+                return false;
+            });
+            
+            // Update author detail view
+            document.getElementById('authorName').textContent = authorName;
+            document.getElementById('authorPaperCount').textContent = `${authorPapers.length} paper${authorPapers.length > 1 ? 's' : ''}`;
+            
+            // Update subtitle
+            document.getElementById('subtitle').textContent = `Viewing papers by ${authorName}`;
+            
+            // Populate papers list
+            const papersList = document.getElementById('papersList');
+            papersList.innerHTML = '';
+            
+            if (authorPapers.length === 0) {
+                papersList.innerHTML = '<div class="paper-item"><div class="paper-title">No papers found for this author</div></div>';
+            } else {
+                authorPapers.forEach((paper, index) => {
+                    const paperDiv = document.createElement('div');
+                    paperDiv.className = 'paper-item';
+                    
+                    // Highlight the selected author in the authors list
+                    const authors = paper['Authors']
+                        .split(',')
+                        .map(author => author.trim())
+                        .map(author => {
+                            if (author === authorName) {
+                                return `<span class="highlight-author">${author}</span>`;
+                            }
+                            return author;
+                        })
+                        .join(', ');
+                    
+                    paperDiv.innerHTML = `
+                        <div class="paper-title">${paper['Paper Title'] || 'Untitled'}</div>
+                        <div class="paper-authors">${authors}</div>
+                    `;
+                    
+                    papersList.appendChild(paperDiv);
+                });
+            }
+            
+            // Show author detail view
+            document.getElementById('authorDetail').style.display = 'block';
+        }
+        
+        function showOverview() {
+            currentView = 'overview';
+            
+            // Hide author detail view
+            document.getElementById('authorDetail').style.display = 'none';
+            
+            // Show overview content
+            document.getElementById('content').style.display = 'block';
+            document.querySelector('.slider-container').style.display = 'block';
+            
+            // Reset subtitle
+            const slider = document.getElementById('minPapersSlider');
+            const minPapers = parseInt(slider.value);
+            if (minPapers === 1) {
+                document.getElementById('subtitle').textContent = `All authors (${minPapers}+ publication)`;
+            } else {
+                document.getElementById('subtitle').textContent = `Authors with multiple papers (${minPapers}+ publications)`;
+            }
+        }
+        
+        function setupBackButton() {
+            document.getElementById('backButton').addEventListener('click', showOverview);
+        }
+        
+        function setupSlider() {
+            const slider = document.getElementById('minPapersSlider');
+            const sliderValue = document.getElementById('sliderValue');
+            const sliderValueInline = document.getElementById('sliderValueInline');
+            const subtitle = document.getElementById('subtitle');
+            const multiPaperAuthorsSpan = document.getElementById('multiPaperAuthors');
+            
+            // Keep sliderValueInline in sync with slider
+            sliderValueInline.textContent = slider.value;
+            
+            slider.addEventListener('input', function() {
+                const minPapers = parseInt(this.value);
+                sliderValue.textContent = minPapers;
+                sliderValueInline.textContent = minPapers;
+                
+                // Update subtitle
+                if (minPapers === 1) {
+                    subtitle.textContent = `All authors (${minPapers}+ publication)`;
+                } else {
+                    subtitle.textContent = `Authors with multiple papers (${minPapers}+ publications)`;
+                }
+                
+                // Filter and sort authors based on slider value
+                const filteredAuthors = Object.entries(allAuthorCounts)
+                    .filter(([author, count]) => count >= minPapers)
+                    .sort((a, b) => b[1] - a[1]);
+                
+                // Update the multi-paper authors count
+                multiPaperAuthorsSpan.textContent = filteredAuthors.length;
+                
+                // Update chart
+                createChart(filteredAuthors);
+            });
+        }
+        
+        function setupSearch() {
+            const searchInput = document.getElementById('authorSearch');
+            const searchButton = document.getElementById('searchButton');
+            const clearButton = document.getElementById('clearSearch');
+            const searchResult = document.getElementById('searchResult');
+            
+            function performSearch() {
+                const query = searchInput.value.trim();
+                
+                if (!query) {
+                    searchResult.style.display = 'none';
+                    clearButton.style.display = 'none';
+                    return;
+                }
+                
+                // Find exact match (case insensitive)
+                const foundAuthor = Object.keys(allAuthorCounts).find(author => 
+                    author.toLowerCase() === query.toLowerCase()
+                );
+                
+                searchResult.style.display = 'block';
+                clearButton.style.display = 'inline-block';
+                
+                if (foundAuthor) {
+                    const paperCount = allAuthorCounts[foundAuthor];
+                    searchResult.className = 'search-result found';
+                    searchResult.innerHTML = `
+                        Found: <span class="author-link" onclick="showAuthorDetail('${foundAuthor.replace(/'/g, "\\'")}')">
+                            ${foundAuthor}
+                        </span> (${paperCount} paper${paperCount > 1 ? 's' : ''}) - Click to view details
+                    `;
+                } else {
+                    searchResult.className = 'search-result not-found';
+                    searchResult.textContent = `No authors found for query: "${query}"`;
+                }
+            }
+            
+            function clearSearch() {
+                searchInput.value = '';
+                searchResult.style.display = 'none';
+                clearButton.style.display = 'none';
+                searchInput.focus();
+            }
+            
+            // Event listeners
+            searchButton.addEventListener('click', performSearch);
+            clearButton.addEventListener('click', clearSearch);
+            
+            // Enter key support
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+            
+            // Clear search when input is empty
+            searchInput.addEventListener('input', function() {
+                if (this.value.trim() === '') {
+                    clearSearch();
+                }
+            });
+        }
+        
+        // Load data when page loads
+        window.addEventListener('load', loadAndProcessData);
+    </script>
+</body>
+</html>
