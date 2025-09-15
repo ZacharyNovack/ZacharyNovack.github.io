@@ -8,16 +8,20 @@ redirect_from:
   - /about.html
 ---
 {% include base_path %}
-Hello! My name is Zachary Novack, and I am currently a 3rd Year Computer Science PhD Student at UC San Diego, where I am advised by <a href="https://cseweb.ucsd.edu/~jmcauley/" target="_blank">Prof. Julian McAuley</a> and <a href="https://cseweb.ucsd.edu/~tberg/" target="_blank">Prof. Taylor Berg-Kirkpatrick</a>. Previously, I studied statistics and machine learning at Carnegie Mellon University, and was primarily advised by <a href="https://www.zacharylipton.com/" target="_blank">Prof. Zachary Lipton</a> and <a href="https://sites.santafe.edu/~simon/" target="_blank">Prof. Simon DeDeo</a>. 
+Hello! My name is Zachary Novack, and I am currently a Computer Science PhD Candidate at UC San Diego, where I am advised by <a href="https://cseweb.ucsd.edu/~jmcauley/" target="_blank">Prof. Julian McAuley</a> and <a href="https://cseweb.ucsd.edu/~tberg/" target="_blank">Prof. Taylor Berg-Kirkpatrick</a>. Previously, I studied statistics and machine learning at Carnegie Mellon University, and was primarily advised by <a href="https://www.zacharylipton.com/" target="_blank">Prof. Zachary Lipton</a> and <a href="https://sites.santafe.edu/~simon/" target="_blank">Prof. Simon DeDeo</a>. 
 
-As someone passionate about building **Generative Music and Audio** systems, my research primarily focuses on three pillars od bringing the state of the art in music generation to practical usability: **Controllability**, **Efficiency**, and **Interactivity**. Specifically, I am interested in investigating <a href="https://ditto-music.github.io/web/" target="_blank">*training-free* control for generative music models</a>  [(ICML 2024)](https://arxiv.org/abs/2401.12179) and <a href="https://ditto-music.github.io/ditto2/" target="_blank">accelerating generative systems to *faster than real time* speeds</a>  [(ISMIR 2024)](https://arxiv.org/abs/2405.20289). Additionally, a high level goal of mine is to leverage AI systems to help *real musicians* **understand** [(AES 2024)](https://arxiv.org/abs/2310.10772), **learn**, and **perform** music more effectively.
+**I am actively on the job market and looking for industry, academic, and postdoc positions starting fall 2026!**
+
+
+As someone passionate about building **Interactive Generative Audio/Music** systems, my research primarily focuses on two main pillars of bringing the state of the art in audio generation to practical usability: **Controllability** and **Efficiency**. In particular, I have worked on extending generative audio systems with <a href="https://ditto-music.github.io/web/" target="_blank">*training-free*</a>  [(ICML 2024, Oral)](https://arxiv.org/abs/2401.12179) and <a href="https://havenpersona.github.io/ossl-v1/" target="_blank">*multimodal*</a> [(ISMIR 2025)](https://arxiv.org/abs/2506.12573) controls, how to accelerate both <a href="https://presto-music.github.io/web/" target="_blank">*music*</a>[(ICLR 2025, Spotlight)](https://arxiv.org/abs/2410.05167) and <a href="https://arc-text2audio.github.io/web/" target="_blank">*general audio*</a> [(WASPAA 2025)](https://arxiv.org/abs/2505.08175) generation models, and how to make such <a href="https://ditto-music.github.io/ditto2/" target="_blank">interactive controls faster </a>  [(ISMIR 2024)](https://arxiv.org/abs/2405.20289).
+ Additionally, I've also collaborated extensively on researching **mutli-modal text-audio reasoning**, both on the modeling side, working on improving long-form audio retrieval [(ICASSP 2025, Oral)](https://arxiv.org/abs/2410.02271), as well as designing better evaluation benchmarks to accurately measure audio perception [(ISMIR 2025, Best Paper Nominee)](https://arxiv.org/abs/2504.00369).
 <!-- Specifically, I have been recently interested in controllable systems for music learning, predicting student classroom performance, and widely making deep learning an empirically-motivated research practice.  -->
 
 In the past, I've worked on general multi-modal reasoning tasks [(ICML 2023)](https://arxiv.org/abs/2302.02551) and empirical deep optimization theory [(ICLR 2023)](https://arxiv.org/abs/2211.15853).
 
 <!-- In the past, I have also worked extensively in computational social science, chiefly within the realms of linguistic bias and social media usage. -->
 
-In my free time, I enjoy making [experimental computer music](https://zacharynovack.github.io/music/), and teach the front ensemble at 10-time world championship finalist [POW Percussion Ensemble](https://pulsepercussion.org/pow)!
+In my free time, I enjoy cooking, playing beach volleyball (a must in San Diego!), as well as teaching the front ensemble at 11-time world championship finalist [POW Percussion Ensemble](https://pulsepercussion.org/pow)!
 
 <hr>
 
