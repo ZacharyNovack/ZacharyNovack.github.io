@@ -15,7 +15,7 @@ Hello! My name is Zachary Novack, and I am currently a Computer Science PhD Cand
 
 As someone passionate about building **Interactive Generative Audio/Music** systems, my research primarily focuses on two main pillars of bringing the state of the art in audio generation to practical usability: **Controllability** and **Efficiency**. In particular, I have worked on extending generative audio systems with <a href="https://ditto-music.github.io/web/" target="_blank">*training-free*</a>  [(ICML 2024, Oral)](https://arxiv.org/abs/2401.12179) and <a href="https://havenpersona.github.io/ossl-v1/" target="_blank">*multimodal*</a> [(ISMIR 2025)](https://arxiv.org/abs/2506.12573) controls, how to accelerate both <a href="https://presto-music.github.io/web/" target="_blank">*music*</a> [(ICLR 2025, Spotlight)](https://arxiv.org/abs/2410.05167) and <a href="https://arc-text2audio.github.io/web/" target="_blank">*general audio*</a> [(WASPAA 2025)](https://arxiv.org/abs/2505.08175) generation models, and how to make such <a href="https://ditto-music.github.io/ditto2/" target="_blank">interactive controls faster </a>  [(ISMIR 2024)](https://arxiv.org/abs/2405.20289).
 
- Additionally, I've also collaborated extensively on researching **mutli-modal text-audio reasoning**, both on the modeling side, working on improving long-form audio retrieval [(ICASSP 2025, Oral)](https://arxiv.org/abs/2410.02271), as well as designing better evaluation benchmarks to accurately measure audio perception [(ISMIR 2025, Best Paper Nominee)](https://arxiv.org/abs/2504.00369).
+ Additionally, I've also collaborated extensively on researching **mutli-modal text-audio reasoning**, both on the modeling side, working on improving long-form audio retrieval [(ICASSP 2025, Oral)](https://arxiv.org/abs/2410.02271), as well as designing better evaluation benchmarks to accurately measure audio perception [(ISMIR 2025, Best Paper Award)](https://arxiv.org/abs/2504.00369).
 <!-- Specifically, I have been recently interested in controllable systems for music learning, predicting student classroom performance, and widely making deep learning an empirically-motivated research practice.  -->
 
 In the past, I've worked on general multi-modal reasoning tasks [(ICML 2023)](https://arxiv.org/abs/2302.02551) and empirical deep optimization theory [(ICLR 2023)](https://arxiv.org/abs/2211.15853).
@@ -31,6 +31,12 @@ In my free time, I enjoy cooking, playing beach volleyball (a must in San Diego!
 <div style="height:250px;overflow:auto;border:0px;border-collapse: collapse;">
 <table border="none" style="border:0px;border-collapse: collapse;" rules="none">
 <colgroup><col span="1" style="width: 12%;"><col span="1" style="width: 88%;"></colgroup><tbody><tr><td>
+<b> September 2025:</b></td><td> <a href="https://arxiv.org/abs/2504.00369">Are you really listening?</a> won best paper at ISMIR!</td></tr><tr><td> 
+<b> September 2025:</b></td><td> 1 paper in at NeurIPS as a spotlight!</td></tr><tr><td> 
+<b> July 2025:</b></td><td> 1 paper in at WASPAA!</td></tr><tr><td> 
+<b> June 2025:</b></td><td> 3 papers in at ISMIR!</td></tr><tr><td> 
+<b> May 2025:</b></td><td> I officially proposed my thesis and became a PhD Candidate!</td></tr><tr><td> 
+<b> May 2025:</b></td><td> Taught four lectures on audio-domain music generation in our new <a href="https://cseweb.ucsd.edu/classes/sp25/cse253-a/">AI Music Course, CSE153/253</a> at UCSD.</td></tr><tr><td> 
 <b> January 2025:</b></td><td> Our work on <a href="https://presto-music.github.io/web/">accelerating text-to-music diffusion models</a> is accepted at ICLR 2025 in Singapore as a Spotlight!</td></tr><tr><td> 
 <b> December 2024:</b></td><td> Three works from the UCSD MUSAIC Group accepted at ICASSP 2025!</td></tr><tr><td> 
 <b> October 2024:</b></td><td> Our work on <a href="https://presto-music.github.io/web/">accelerating text-to-music diffusion models</a> is out on arXiv!</td></tr><tr><td> 
